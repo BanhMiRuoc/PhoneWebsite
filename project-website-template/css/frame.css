@@ -48,7 +48,7 @@ video {
 
 h1 {
   font-size: 30px;
-  color: #333333;
+  color: #F7BDCB;
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -57,7 +57,7 @@ h1 {
 
 h2 {
   font-size: 24px;
-  color: #333333;
+  color: #F7BDCB;
   margin: 30px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -66,7 +66,7 @@ h2 {
 
 h3 {
   font-size: 18px;
-  color: #333333;
+  color: #F7BDCB;
   margin: 10px 0 0 0;
   padding: 0;
   font-weight: bold;
@@ -94,7 +94,7 @@ hr {
   z-index: 2;
   position: relative;
   width: 100%;
-  background-color: #333333;
+  background-color: #F7BDCB;
   min-width: 300px;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -128,7 +128,7 @@ hr {
 }
 
 .menu .logo a {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(87, 84, 163);
   font-family: 'Open Sans Condensed', Helvetica, Arial, sans-serif;
   font-size: 30px;
   text-decoration: none;
@@ -1164,7 +1164,7 @@ ol.nested>li:before {
 
 .custom-survey .custom-radio-group-survey input[type="radio"]:not(:disabled):hover,
 .custom-survey .custom-radio-group-survey input[type="checkbox"]:not(:disabled):hover {
-  color: #333333;
+  color: #F7BDCB;
   background-color: #eeeeee;
 }
 

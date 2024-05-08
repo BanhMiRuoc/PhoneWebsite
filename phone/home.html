@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jockey+One&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>MeoPhones</title>
+    <style>
+        body {
+            font-family: "JetBrains Mono", monospace;
+        }
+        .navbar {
+            flex-wrap: nowrap;
+            width: 100%;
+            height: 4.5rem;
+            background-color: #F7BDCB !important;
+            justify-content: start;
+        }
+        a.navbar-brand {
+            margin-left: 10%;
+            margin-top: 0.5rem;
+            text-align: center;
+            font-family: "Jockey One", sans-serif !important;
+            font-size: 2.5rem;
+            color: #5754A3 !important;
+        }
+        .form-control {
+            margin-left: 5%;
+            margin-top: 0.5rem;
+            border-radius: 2rem 0 0 2rem !important;
+        }
+        .search-btn {
+            margin-top: 0.5rem;
+            border-radius: 0 2rem 2rem 0!important;
+        }
+        .nav-btn {
+            margin-left: 2%;
+            margin-top: 1.5rem;
+        }
+        p {
+            font-size: 0.8rem;
+        }
+        .form-inline {
+            width: 40%;
+        }
+        .icon-img {
+            margin-left: 10px;
+        }
+        .menu {
+            justify-content: space-around;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;            margin-bottom: 2%;
+        }
+        .menu, .slider, .slider-left, .slider-right {
+            display: flex;
+            justify-content: center;
+        }
+        .slider-left, .slider-right {
+            display: flex;
+            flex-direction: column;
+        }
+        .slider {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <nav class="navbar navbar-light bg-light jusify-content-none">
+                <a href="Home" class="navbar-brand">
+                    <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
+                    MeoPhones
+                </a>
+                <form class="form-inline">
+                    <div class="input-group">
+                        <input class="form-control border-end-0 border rounded-pill" type="search" value="search" id="example-search-input">
+                        <button class="btn search-btn btn-outline-secondary border border-start-0 bg-white border-pill ms-n5" type="button">
+                            <img src="assets/images/magnifying_glass.png"  width="40" height="40" alt="">
+                        </button>
+                    </div>
+                </form>
+                <button class="btn nav-btn">
+                    <div class="navbar-brand d-flex flex-column">
+                        <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
+                        <p>Giỏ hàng</p>
+                    </div>
+                </button>
+                <button class="btn nav-btn">
+                    <div class="navbar-brand d-flex flex-column">
+                        <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                        <p>Tài khoản</p>
+                    </div>
+                </button>
+            </nav>
+            <div class="menu">
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Apple
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Oppo
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      SamSung
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Xiaomi
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Nokia
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+                <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Vivo
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </div>
+            </div>
+            <div class="slider">
+                <div class="slider-left">
+                    <img src="assets/images/xiaomi_13_tthumb_yt_1020_x_5701.jpeg" width="312" height="170" alt="">
+                    <img src="assets/images/nokia_g_11_plus_thumb_video_1020_x_5701.jpeg" width="312" height="170" alt="">
+                </div>
+                <div id="main-slider" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#main-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="assets/images/samsung_zfoldf_mobi_78412001.png"  width="915" height="350" alt="">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/oppo_f_1711.jpeg"  width="915" height="350" alt="">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="assets/images/vi_vn_iphone_15_pro_max_41020_x_5701.jpeg"   width="915" height="350" alt="">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#main-slider" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#main-slider" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                <div class="slider-right">
+                    <img src="assets/images/vivo_y_36_mobi_23012001.png"  width="310" height="110" alt="">
+                    <img src="assets/images/realme.jpeg"  width="310" height="150" alt="">
+                    <img src="assets/images/realme_c_30_s_3_gb_64_gb_6381699460681872151.jpeg"  width="310" height="80" alt="">
+                </div>
+            </div>
+    </header>
+    <section>
+      
+    </section>
+</body>
+</html>

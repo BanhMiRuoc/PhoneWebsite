@@ -22,31 +22,8 @@
     <div>
     <?php
         include("pages/menu.php");
-        include("config/connect.php");
-    ?>
-
-    <?php
-    if(isset($_GET['quanly'])) {
-        $tam = $_GET['quanly'];
-    }
-    else {
-        $tam = '';
-    }
-
-    if($tam == 'cm2'){
-        include("pages/cm2.php");
-    }
-    elseif($tam == 'cm1'){
         include("pages/cm1.php");
-    }
-    elseif($tam == 'cm2_1'){
-        include("pages/cm2_1.php");
-    }
-    else {
-        include("pages/cm1.php");
-    }
     ?>
     </div>
-    <script src="js/sdt.js"></script>
 </body>
 </html>

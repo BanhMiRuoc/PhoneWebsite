@@ -15,14 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/customer_management_1.css" />
-    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="../css/customer_management_1.css" />
+    <link rel="stylesheet" href="../css/menu.css" />
 </head>
 <body>
     <div>
     <?php
-        include("pages/menu.php");
-        include("config/connect.php");
+        include("phones/pages/menu.php");
+        include("phones/config/connect.php");
     ?>
 
     <?php
@@ -34,19 +34,22 @@
     }
 
     if($tam == 'cm2'){
-        include("pages/cm2.php");
+        include "pages/cm2.php";
+    }
+    elseif($tam == 'doimk'){
+        include "pages/doimk.php";
     }
     elseif($tam == 'cm1'){
-        include("pages/cm1.php");
+        include "pages/cm1.php";
     }
     elseif($tam == 'cm2_1'){
-        include("pages/cm2_1.php");
+        include "pages/cm2_1.php";
     }
     else {
-        include("pages/cm1.php");
+        include "pages/cm1.php";
     }
     ?>
     </div>
-    <script src="js/sdt.js"></script>
+    <script src="phones/js/sdt.js"></script>
 </body>
 </html>

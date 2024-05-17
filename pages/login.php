@@ -1,5 +1,5 @@
 <section class="login">
-    <div class="login-address container-fluid">
+    <div class="login-address container">
         <div class="p-2">
             <p class="login-address-content text-uppercase fw-bold">
                 HOME

@@ -1,0 +1,14 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    box-sizing: border-box;
+}
+.container-fluid {
+    background: #EF99AE;
+}
+.logo-copyright {
+    height: 1.5rem;
+    width: auto;
+}
+.footer-content {
+    font-size: 1rem;
+}

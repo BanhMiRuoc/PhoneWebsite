@@ -68,34 +68,61 @@ CREATE TABLE IF NOT EXISTS Chitiethoadon (
     FOREIGN KEY (mahd) REFERENCES Hoadon (mahd),
     FOREIGN KEY (mavach) REFERENCES Sanpham (mavach)
 );
+
+CREATE TABLE IF NOT EXISTS Sequence (
+    table_name VARCHAR(50) PRIMARY KEY,
+    last_id INT NOT NULL
+);
+
+INSERT INTO Sequence (table_name, last_id) VALUES
+('Nhanvien', 0),
+('Khachhang', 0),
+('Sanpham', 0),
+('Hoadon', 0);
+
+DELIMITER //
+
+CREATE TRIGGER trigger_auto_generate_mahd
+BEFORE INSERT ON Hoadon
+FOR EACH ROW
+BEGIN
+    UPDATE Sequence SET last_id = last_id + 1 WHERE table_name = 'Hoadon';
+    SET NEW.mahd = CONCAT('HD', LPAD((SELECT last_id FROM Sequence WHERE table_name = 'Hoadon'), 6, '0'));
+END //
+
+DELIMITER ;
 DELIMITER //
 
 CREATE TRIGGER trigger_auto_generate_mavach
 BEFORE INSERT ON Sanpham
 FOR EACH ROW
 BEGIN
-    SET NEW.mavach = CONCAT('M', LPAD((SELECT COUNT(*) + 1 FROM Sanpham), 6, '0'));
+    UPDATE Sequence SET last_id = last_id + 1 WHERE table_name = 'Sanpham';
+    SET NEW.mavach = CONCAT('M', LPAD((SELECT last_id FROM Sequence WHERE table_name = 'Sanpham'), 6, '0'));
 END //
 
-CREATE TRIGGER trigger_auto_generate_manhanvien
-BEFORE INSERT ON Nhanvien
-FOR EACH ROW
-BEGIN
-    SET NEW.manhanvien = CONCAT('NV', LPAD((SELECT COUNT(*) + 1 FROM Nhanvien), 6, '0'));
-END //
+DELIMITER ;
 
-CREATE TRIGGER trigger_auto_generate_mahd
-BEFORE INSERT ON Hoadon
-FOR EACH ROW
-BEGIN
-    SET NEW.mahd = CONCAT('HD', LPAD((SELECT COUNT(*) + 1 FROM Hoadon), 6, '0'));
-END //
+DELIMITER //
 
 CREATE TRIGGER trigger_auto_generate_makhachhang
 BEFORE INSERT ON Khachhang
 FOR EACH ROW
 BEGIN
-    SET NEW.makhachhang = CONCAT('KH', LPAD((SELECT COUNT(*) + 1 FROM Khachhang), 6, '0'));
+    UPDATE Sequence SET last_id = last_id + 1 WHERE table_name = 'Khachhang';
+    SET NEW.makhachhang = CONCAT('KH', LPAD((SELECT last_id FROM Sequence WHERE table_name = 'Khachhang'), 6, '0'));
+END //
+
+DELIMITER ;
+
+DELIMITER //
+
+CREATE TRIGGER trigger_auto_generate_manhanvien
+BEFORE INSERT ON Nhanvien
+FOR EACH ROW
+BEGIN
+    UPDATE Sequence SET last_id = last_id + 1 WHERE table_name = 'Nhanvien';
+    SET NEW.manhanvien = CONCAT('NV', LPAD((SELECT last_id FROM Sequence WHERE table_name = 'Nhanvien'), 6, '0'));
 END //
 
 DELIMITER ;

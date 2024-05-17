@@ -1,4 +1,12 @@
-.login .login-content {
+.login .login-address {
+    font-size: 1.25rem;
+    color: #5754A3;
+}
+.login .login-address .icon-next {
+    height: 0.9rem;
+    width: auto;
+}
+.login-content {
     justify-content: center;
     border: solid 2px #F7BDCB;
     margin: 5rem auto;

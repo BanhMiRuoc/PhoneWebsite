@@ -1,4 +1,13 @@
 <section class="login">
+    <div class="login-address container-fluid">
+        <div class="p-2">
+            <p class="login-address-content text-uppercase fw-bold">
+                HOME
+                <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
+                Login
+            </p>
+        </div>
+    </div>
     <div class="login-content">
         <div class="logo">
             <img src="assets/images/mobile_11.png" width="10%" height="20%" alt="">

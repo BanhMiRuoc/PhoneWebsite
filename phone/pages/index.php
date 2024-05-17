@@ -15,15 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="phones/css/customer_management_1.css" />
-    <link rel="stylesheet" href="phones/css/menu.css" />
+    <link rel="stylesheet" href="css/customer_management_1.css" />
+    <link rel="stylesheet" href="css/menu.css" />
 </head>
 <body>
     <div>
     <?php
-        include "phones/pages/menu.php";
-        include "phones/pages/cm1.php";
-        include "pages/changepassword.php";
+        include "pages/menu.php";
+        include "pages/cm1.php";
     ?>
     </div>
 </body>

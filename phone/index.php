@@ -15,14 +15,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../css/customer_management_1.css" />
-    <link rel="stylesheet" href="../css/menu.css" />
+    <link rel="stylesheet" href="../phone/css/customer_management_1.css" />
+    <link rel="stylesheet" href="../phone/css/menu.css" />
 </head>
 <body>
     <div>
     <?php
-        include("phones/pages/menu.php");
-        include("phones/config/connect.php");
+        include("pages/menu.php");
+        include("config/connect.php");
     ?>
 
     <?php
@@ -45,11 +45,17 @@
     elseif($tam == 'cm2_1'){
         include "pages/cm2_1.php";
     }
+    elseif($tam == ''){
+        include("pages/login.php");
+    }
     else {
-        include "pages/cm1.php";
+        include("pages/login.php");
     }
     ?>
     </div>
-    <script src="phones/js/sdt.js"></script>
+    <script src="../phone/js/check_Login.js"></script>
+    <script src="../phone/js/check_Sdt.js"></script>
+    <script src="../phone/js/check_InfoKHM.js"></script>
+    <script src="../phone/js/doimk.js"></script>
 </body>
 </html>

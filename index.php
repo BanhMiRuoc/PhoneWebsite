@@ -28,13 +28,14 @@
     <link rel="stylesheet" href="css/main_no_register.css">
     <link rel="stylesheet" href="css/customer_management_1.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
     <!-- add js -->
 </head>
 <body>
     <div>
         <?php
             include("pages/header.php");
-            include("pages/main/main_no_register.php");
+            include("pages/main.php");
             include("pages/footer.php");
         ?>
     </div>

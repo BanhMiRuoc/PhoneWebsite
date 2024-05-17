@@ -1,0 +1,44 @@
+.login .login-content {
+    justify-content: center;
+    border: solid 2px #F7BDCB;
+    margin: 5rem auto;
+    align-items: center;
+    width: 40rem;
+    height: 25rem; 
+}
+.login .login-form {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    flex-direction: column;
+    display: flex;
+}
+.login .logo h1 {
+    font-family: "Jockey One", sans-serif !important;
+    color: #5754A3;
+}
+.login .logo {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .form-group {
+    margin: 3px;
+}
+.login .form-check { 
+    padding-left: 0 !important;
+}
+.login .form-check a {
+    font-size: small;
+    color: #5754A3;
+    text-decoration: none;
+}
+.login .sm {
+    background-color: #E37596;
+    border: #E37596;
+}
+.login .sm:hover {
+    background-color: #F7BDCB;
+    color: #5754A3;
+}

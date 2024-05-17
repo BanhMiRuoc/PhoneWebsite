@@ -14,14 +14,18 @@
         </form>
         <button class="btn nav-btn">
             <div class="navbar-brand d-flex flex-column">
-                <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
-                <p>Giỏ hàng</p>
+                <a href="index.php?user=cart">
+                    <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
+                    <p>Giỏ hàng</p>
+                </a>
             </div>
         </button>
         <button class="btn nav-btn">
             <div class="navbar-brand d-flex flex-column">
-                <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
-                <p>Tài khoản</p>
+                <a href="index.php?user=login">
+                    <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                    <p>Tài khoản</p>
+                </a>
             </div>
         </button>
     </nav>

@@ -5,9 +5,9 @@
           Apple
         </button>
         <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
-          <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">iPhone 15 Pro</a></li>
+            <li><a class="dropdown-item" href="#">iPhone 15 Pro Max</a></li>
+            <li><a class="dropdown-item" href="#">iPhone 14</a></li>
         </ul>
     </div>
     <div class="dropdown">
@@ -15,9 +15,9 @@
         Oppo
         </button>
         <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">OPPO Find N3</a></li>
+            <li><a class="dropdown-item" href="#">OPPO Find N3 Flip</a></li>
+            <li><a class="dropdown-item" href="#">OPPO Find N2 Flip</a></li>
         </ul>
     </div>
     <div class="dropdown">
@@ -25,9 +25,9 @@
         SamSung
         </button>
         <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Galaxy S24 Ultra</a></li>
+            <li><a class="dropdown-item" href="#">Galaxy Z Flip 5</a></li>
+            <li><a class="dropdown-item" href="#">Galaxy Z Fold 5</a></li>
         </ul>
     </div>
     <div class="dropdown">
@@ -35,9 +35,9 @@
         Xiaomi
         </button>
         <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Xiaomi Redmi Note 13 Pro </a></li>
+            <li><a class="dropdown-item" href="#">Xiaomi Redmi Note 13</a></li>
+            <li><a class="dropdown-item" href="#">Xiaomi POCO X6 Pro</a></li>
         </ul>
     </div>
     <div class="dropdown">
@@ -45,9 +45,9 @@
         Nokia
         </button>
         <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Nokia C32</a></li>
+            <li><a class="dropdown-item" href="#">Nokia 110 4G Pro</a></li>
+            <li><a class="dropdown-item" href="#">Nokia 8210</a></li>
         </ul>
     </div>
     <div class="dropdown">
@@ -55,9 +55,8 @@
         Vivo
         </button>
         <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="#">Vivo Y35</a></li>
+            <li><a class="dropdown-item" href="#">Vivo T1X</a></li>
         </ul>
     </div>
 </div>
@@ -115,7 +114,7 @@
         <div class="carousel-item active">
         <div class="card-wrapper container-sm d-flex  justify-content-around">
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap">
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -136,7 +135,7 @@
                 </div> 
             </div>
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -157,7 +156,7 @@
                 </div> 
             </div>
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -182,7 +181,7 @@
         <div class="carousel-item">
         <div class="card-wrapper container-sm d-flex   justify-content-around">
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -203,7 +202,7 @@
                 </div> 
             </div>
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -224,7 +223,7 @@
                 </div> 
             </div>
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -249,7 +248,7 @@
         <div class="carousel-item">
         <div class="card-wrapper container-sm d-flex  justify-content-around">
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -270,7 +269,7 @@
                 </div> 
             </div>
             <<div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 
@@ -291,7 +290,7 @@
                 </div> 
             </div>
             <div class="card" style="width: 18rem; margin: 1rem"> 
-                <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpg" alt="Card image cap"> 
                 <div class="card-body"> 
                 <h5 class="card-title">Iphone 15 Pro Max</h5> 
                 <div class="test"> 

@@ -19,7 +19,7 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
     <!-- Add css -->
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/categories.css">
+    <link rel="stylesheet" href="css/menu.css">
     <link rel="stylesheet" href="css/customer_management_1.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
@@ -27,7 +27,7 @@
     <div>
     <?php
         include("pages/header.php");
-        include("pages/categories.php");
+        include("pages/menu.php");
         include("pages/cm2_1.php");
         include("pages/footer.php");
     ?>

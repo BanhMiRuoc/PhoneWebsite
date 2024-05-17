@@ -14,21 +14,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <!-- add bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
+    <link href="bootstrap-rating.css" rel="stylesheet">
+    <script type="text/javascript" src="bootstrap-rating.js"></script>
     <!-- Add logo -->
     <link rel="icon" type="image/x-icon" href="logo.png">
     <!-- Add css -->
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/main_no_register.css">
     <link rel="stylesheet" href="css/customer_management_1.css">
     <link rel="stylesheet" href="css/footer.css">
+    <!-- add js -->
+    <link rel="stylesheet" href="js/main_no_register.js">
 </head>
 <body>
     <div>
     <?php
         include("pages/header.php");
-        include("pages/menu.php");
-        include("pages/cm2_1.php");
+        include("pages/main/main_no_register.php");
         include("pages/footer.php");
     ?>
     </div>

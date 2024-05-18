@@ -18,7 +18,7 @@
                 <label for="inputEmail1">Username</label>
                 <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
-            <div class="form-group form-check mt-5">
+            <div class="form-group form-check my-5">
                 <label for="inputPassword1">Password</label>
                 <input type="password" class="form-control" id="inputPassword1" placeholder="Enter password">
             </div>

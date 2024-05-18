@@ -17,14 +17,14 @@
         </div>
         <small class="forgot-password-attention d-flex justify-content-center mt-3">Vui lòng nhập OTP đã được gửi đến email đã liên kết với tài khoản của bạn</small>
         <form class="forgot-password-form mt-4">
-            <div class="form-group ">
-                <label class="mb-1 text-uppercase" for="exampleInputEmail1">otp</label>
-                <input type="email" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter OTP">
+            <div class="form-group">
+                <label class="mb-1" for="exampleInputEmail1">Please enter your OTP</label>
+                <input type="text" class="form-control mb-3" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter OTP">
             </div>
             <button type="submit" class="btn sm btn-primary text-uppercase mb-1">continue</button>
             <div class="d-flex justify-content-end">
                 <img src="assets/images/next.png" alt="icon next" class="icon-next mt-1">
-                <a href="forgot-password" class="turn-back fw-semibold">Trở lại đăng nhập</a>
+                <a href="index.php?user=login" class="turn-back fw-semibold">Trở lại đăng nhập</a>
             </div> 
         </form>
     </div>

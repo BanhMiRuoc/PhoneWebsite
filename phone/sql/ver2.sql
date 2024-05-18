@@ -126,3 +126,10 @@ BEGIN
 END //
 
 DELIMITER ;
+
+INSERT INTO Sanpham (phanloai, giagoc, giaban, anhsp, tensp, mavach, daban, tonkho, ngaysanxuat) VALUES
+('Apple', 10000000, 12000000, LOAD_FILE('/path/to/iphone_image.jpg'), 'iPhone 13', '1234567890123', 50, 100, '2023-05-01'),
+('Samsung', 8000000, 9500000, LOAD_FILE('/path/to/samsung_image.jpg'), 'Samsung Galaxy S21', '1234567890124', 30, 50, '2023-04-01'),
+('Oppo', 6000000, 7500000, LOAD_FILE('/path/to/oppo_image.jpg'), 'Oppo Reno 5', '1234567890125', 40, 70, '2023-03-01'),
+('Xiaomi', 5000000, 6500000, LOAD_FILE('/path/to/xiaomi_image.jpg'), 'Xiaomi Mi 11', '1234567890126', 20, 80, '2023-02-01'),
+('Nokia', 3000000, 4000000, LOAD_FILE('/path/to/nokia_image.jpg'), 'Nokia 5.3', '1234567890127', 10, 60, '2023-01-01');

@@ -20,7 +20,7 @@
  
   .ti-khon-2 .ellipse-7 {
     border-radius: 100px;
-    background: url('assets/images/ellipse_7.png') 50% / cover no-repeat;
+    background: url('../assets/images/ellipse_7.png') 50% / cover no-repeat;
     position: relative;
     margin: 0px 0px 15px 0px;
     width: 210px;

@@ -14,25 +14,32 @@
     width: 40rem;
     height: 25rem; 
 }
-.login .login-form {
+.login .login-content .login-form {
     width: 50%;
     height: 50%;
     margin: auto;
     flex-direction: column;
     display: flex;
 }
-.login .logo h1 {
-    font-family: "Jockey One", sans-serif !important;
-    color: #5754A3;
-}
-.login .logo {
+.login .login-content .logo {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.login .form-group {
+.login .login-content .logo h1 {
+    font-family: "Jockey One", sans-serif !important;
+    color: #5754A3;
+}
+.login .login-content .form-group {
     margin: 3px;
+}
+.login .login-content .form-check {
+    color: #5754A3;
+    font-size: 1.1rem;
+}
+.login .login-content .form-check input::placeholder {
+    font-size: 1rem;
 }
 .login .form-check { 
     padding-left: 0 !important;

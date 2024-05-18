@@ -14,16 +14,16 @@
             <h1>LOGIN</h1>
         </div>
         <form class="login-form">
-            <div class="form-group ">
-            <label for="exampleInputEmail1">Username</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-            </div>
-            <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
             <div class="form-group form-check">
-            <a href="forgot-password">Quên mật khẩu?</a>
+                <label for="inputEmail1">Username</label>
+                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group form-check mt-5">
+                <label for="inputPassword1">Password</label>
+                <input type="password" class="form-control" id="inputPassword1" placeholder="Enter password">
+            </div>
+            <div class="form-group form-check d-flex justify-content-end">
+                <a href="forgot-password">Quên mật khẩu?</a>
             </div>
             <button type="submit" class="btn sm btn-primary">Đăng nhập</button>
         </form>

@@ -26,16 +26,19 @@
     <!-- Add css -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main_no_register.css">
-    <link rel="stylesheet" href="css/customer_management_1.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/customer_management_1.css"> -->
     <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <!-- <link rel="stylesheet" href="css/forgot_password.css"> -->
     <!-- add js -->
 </head>
 <body>
     <div>
         <?php
             include("pages/header.php");
-            include("pages/main.php");
+            // include("pages/main.php");
+            include("pages/login.php");
+            // include("pages/forgot-password/otp.php");
             include("pages/footer.php");
         ?>
     </div>

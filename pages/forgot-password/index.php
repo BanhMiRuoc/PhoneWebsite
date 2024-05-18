@@ -1,31 +1,31 @@
-<section class="forgot-password">
-    <div class="forgot-password-address container">
-        <div class="p-2 text-uppercase">
-            <p class="forgot-password-address-content text-uppercase fw-bold">
+<section class="login" href="index.php?user=login">
+    <div class="login-address container">
+        <div class="p-2">
+            <p class="login-address-content text-uppercase fw-bold">
                 HOME
                 <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
-                login
-                <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
-                forgot password
+                Login
             </p>
         </div>
     </div>
-    <div class="forgot-password-content">
+    <div class="login-content">
         <div class="logo">
             <img src="assets/images/mobile_11.png" width="10%" height="20%" alt="">
-            <h1>Forgot password</h1>
+            <h1>LOGIN</h1>
         </div>
-        <small class="forgot-password-attention d-flex justify-content-center mt-3">Vui lòng nhập email đã liên kết với tài khoản của bạn để cấp lại mật khẩu</small>
-        <form class="forgot-password-form mt-4">
-            <div class="form-group ">
-                <label class="mb-1" for="exampleInputEmail1">Email</label>
-                <input type="email" class="form-control mb-3    " id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        <form class="login-form">
+            <div class="form-group form-check">
+                <label for="inputEmail1">Username</label>
+                <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
             </div>
-            <button type="submit" class="btn sm btn-primary text-uppercase mb-1">continue</button>
-            <div class="d-flex justify-content-end">
-                <img src="assets/images/next.png" alt="icon next" class="icon-next mt-1">
-                <a href="forgot-password" class="turn-back fw-semibold">Trở lại đăng nhập</a>
-            </div> 
+            <div class="form-group form-check my-5">
+                <label for="inputPassword1">Password</label>
+                <input type="password" class="form-control" id="inputPassword1" placeholder="Enter password">
+            </div>
+            <div class="form-group form-check d-flex justify-content-end">
+                <a href="index.php?user=login&action=forgot">Quên mật khẩu?</a>
+            </div>
+            <button type="submit" class="btn sm btn-primary" href="#">Đăng nhập</button>
         </form>
     </div>
 </section>

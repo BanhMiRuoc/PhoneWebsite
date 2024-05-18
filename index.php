@@ -26,6 +26,7 @@
     <!-- Add css -->
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/main_no_register.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="stylesheet" href="css/footer.css">
     <!-- add js -->
@@ -34,8 +35,7 @@
     <div>
         <?php
             include("pages/header.php");
-            // include("pages/main.php");
-            include("pages/forgot-password/otp.php");
+            include("pages/main.php");
             include("pages/footer.php");
         ?>
     </div>

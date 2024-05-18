@@ -56,6 +56,8 @@
     }
     elseif($tam == 'cm1'){
         include("pages/cm1.php");
+    }elseif($tam == 'doimk'){
+        include("pages/changepassword.php");
     }
     elseif($tam == 'login'){
         include("pages/login.php");
@@ -102,5 +104,6 @@
     <script src="js/check_Login.js"></script>
     <script src="js/check_Sdt.js"></script>
     <script src="js/check_InfoKHM.js"></script>
+    <script src="js/doimk.js"></script>
 </body>
 </html>

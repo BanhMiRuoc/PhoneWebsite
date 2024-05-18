@@ -6,7 +6,7 @@
         <form class="login-form" method="POST" action="modules/sanpham/checkLogin.php" id="login-form">
             <div class="form-group ">
               <label for="exampleInputEmail1">Username</label>
-              <input type="email" class="form-control1" id="username" aria-describedby="emailHelp" placeholder="Enter email" name="username">
+              <input type="text" class="form-control1" id="username" aria-describedby="emailHelp" placeholder="Enter email" name="username">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>

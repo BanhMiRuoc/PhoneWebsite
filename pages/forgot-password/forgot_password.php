@@ -1,5 +1,5 @@
 <section class="forgot-password">
-    <div class="forgot-password">
+    <div class="forgot-password-in">
         <div class="forgot-password-address container">
             <div class="p-2 text-uppercase">
                 <p class="forgot-password-address-content text-uppercase fw-bold">
@@ -11,7 +11,7 @@
                 </p>
             </div>
         </div>
-        <div class="forgot-password-content">
+        <div class="forgot-password-content" method="POST" action-="modules/sanpham/checkLogin.php" id="login-form">
             <div class="logo">
                 <img src="assets/images/mobile_11.png" width="10%" height="20%" alt="">
                 <h1>Forgot password</h1>

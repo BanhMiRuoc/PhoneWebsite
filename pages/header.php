@@ -4,10 +4,10 @@
             <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
             MeoPhones
         </a>
-        <form class="form-inline">
+        <form class="form-inline" action="modules/sanpham/finding.php" method="GET">
             <div class="input-group">
                 <input class="form-control border-end-0 border rounded-pill" type="search" value="search" id="example-search-input">
-                <button class="btn search-btn btn-outline-secondary border border-start-0 bg-white border-pill ms-n5" type="button">
+                <button class="btn search-btn btn-outline-secondary border border-start-0 bg-white border-pill ms-n5" type="submit" name="tukhoa" value="Tìm kiếm">
                     <img src="assets/images/magnifying_glass.png"  width="40" height="40" alt="">
                 </button>
             </div>

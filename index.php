@@ -35,8 +35,8 @@
     <div>
         <?php
             include("pages/header.php");
-            // include("pages/main.php");
-            include("admincp/modules/menu.php");
+            include("pages/main.php");
+            // include("admincp/modules/menu.php");
             include("pages/footer.php");
         ?>
     </div>

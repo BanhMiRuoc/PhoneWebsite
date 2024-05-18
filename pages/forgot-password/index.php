@@ -13,7 +13,7 @@
             <img src="assets/images/mobile_11.png" width="10%" height="20%" alt="">
             <h1>LOGIN</h1>
         </div>
-        <form class="login-form">
+        <form class="login-form" method="POST" action-="modules/sanpham/checkLogin.php" id="login-form">
             <div class="form-group form-check">
                 <label for="inputEmail1">Username</label>
                 <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">

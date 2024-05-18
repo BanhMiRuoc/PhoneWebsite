@@ -1,13 +1,13 @@
 <?php
 include('../../config/connect.php');
+session_start();
 
 if(isset($_POST['btn_cont1'])) {
-    session_start();
     $sdt = $_SESSION['sdt'];
     $hoten = $_POST['hoten'];
     $diachi =$_POST['diachi'];
 
-    $create_account_query = "INSERT INTO TAIKHOAN (tentk, mk) VALUES ('$sdt', '123')";
+    $create_account_query = "INSERT INTO TAIKHOAN (tentk, mk, quyen) VALUES ('$sdt', '123', 'KH')";
 
 
     if ($mysqli->query($create_account_query) === TRUE) {

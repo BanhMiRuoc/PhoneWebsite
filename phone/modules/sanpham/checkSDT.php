@@ -1,9 +1,9 @@
 <?php
 include('../../config/connect.php');
+session_start();
 
 if(isset($_POST['btn_cont'])) {
     $sdt = $_POST['sdt'];
-    session_start();
     $_SESSION['sdt'] = $sdt;
     $sel_sdt = "SELECT COUNT(*) FROM KHACHHANG WHERE SODIENTHOAI = '$sdt'";
     $result = $mysqli->query($sel_sdt);

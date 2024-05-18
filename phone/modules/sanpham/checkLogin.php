@@ -13,7 +13,7 @@ if(isset($_POST['btn-login'])) {
     $count = $row[0]; // Lấy giá trị COUNT
 
     if ($count > 0) {
-        header('Location:../../index.php?quanly=cm1');
+        header('Location:../../index.php?quanly=home&login=true');
         exit(); // Dừng việc thực thi mã PHP ngay sau khi chuyển hướng
     }
     else {

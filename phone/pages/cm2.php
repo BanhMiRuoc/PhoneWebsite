@@ -6,7 +6,7 @@
         </div>
 
         <?php
-        session_start();
+        // session_start();
         $sdt = $_SESSION['sdt'];
         $query = "SELECT * FROM KHACHHANG WHERE SODIENTHOAI = '$sdt'";
         $result = $mysqli->query($query);

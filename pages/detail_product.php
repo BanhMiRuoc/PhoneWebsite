@@ -1,13 +1,17 @@
-<!-- menu product -->
-<div class="address container">
-    <div class="p-2">
-      <p class="login-address-content text-uppercase fw-bold">
-        HOME
-        <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
-        Detail
-      </p>
-    </div>
-  </div>
+<div class="customer-management-1">
+      <div class="menu">
+        <div class="container">
+          <span class="customer-management">
+          Home
+          </span>
+          <div class="arrow-down-sign-to-navigate-3">
+          </div>
+
+          <span class="customer-management">
+          Detail
+          </span>
+        </div>   
+      </div>
   <!-- body main -->
   <div class="detail-product container">
     <h1 class="product-name">iPhone 15 Pro Max</h1>

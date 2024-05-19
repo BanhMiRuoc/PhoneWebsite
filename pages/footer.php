@@ -18,7 +18,7 @@
         <img src="assets/images/image_5.png" alt="logo Tiktok" class="logo me-4">
       </a>
       <!-- github -->
-      <a href="https://github.com/BanhMiRuoc/PhoneWebsite">
+      <a href="#">
         <img src="assets/images/image_6.png" alt="logo Github" class="logo me-4">
       </a>
     </div>

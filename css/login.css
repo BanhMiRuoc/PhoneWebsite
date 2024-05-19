@@ -1,12 +1,67 @@
-.login .login-address {
-    font-size: 1.25rem;
-    color: #5754A3;
+body {
+color: #5754A3 !important;
+font-family: "JetBrains Mono", monospace;
 }
-.login .login-address .icon-next {
-    height: 0.9rem;
-    width: auto;
+.navbar {
+flex-wrap: nowrap;
+width: 100%;
+height: 4.5rem;
+background-color: #F7BDCB !important;
+justify-content: start;
 }
-.login-content {
+a.navbar-brand {
+margin-left: 10%;
+margin-top: 0.5rem;
+text-align: center;
+font-family: "Jockey One", sans-serif !important;
+font-size: 2.5rem;
+color: #5754A3 !important;
+}
+.form-control {
+margin-left: 5%;
+margin-top: 0.5rem;
+border-radius: 2rem 0 0 2rem !important;
+}
+
+.form-control1 {
+margin-top: 0.5rem;
+width: 100%;
+}
+.search-btn {
+margin-top: 0.5rem;
+border-radius: 0 2rem 2rem 0!important;
+}
+.nav-btn {
+margin-left: 2%;
+margin-top: 1.5rem;
+}
+p {
+font-size: 0.8rem;
+}
+.form-inline {
+width: 40%;
+}
+.icon-img {
+margin-left: 10px;
+}
+.menu {
+    justify-content: space-around;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;            margin-bottom: 2%;
+}
+.menu, .slider, .slider-left, .slider-right {
+    display: flex;
+    justify-content: center;
+}
+.slider-left, .slider-right {
+    display: flex;
+    flex-direction: column;
+}
+.slider {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.section-item {
     justify-content: center;
     border: solid 2px #F7BDCB;
     margin: 5rem auto;
@@ -14,46 +69,41 @@
     width: 40rem;
     height: 25rem; 
 }
-.login .login-content .login-form {
+
+
+.login-form {
     width: 50%;
     height: 50%;
     margin: auto;
     flex-direction: column;
     display: flex;
 }
-.login .login-content .logo {
+.logo h1 {
+    font-family: "Jockey One", sans-serif !important;
+    color: #5754A3;
+}
+.logo {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.login .login-content .logo h1 {
-    font-family: "Jockey One", sans-serif !important;
-    color: #5754A3;
-}
-.login .login-content .form-group {
+.form-group {
     margin: 3px;
 }
-.login .login-content .form-check {
-    color: #5754A3;
-    font-size: 1.1rem;
-}
-.login .login-content .form-check input::placeholder {
-    font-size: 1rem;
-}
-.login .form-check { 
+.form-check { 
     padding-left: 0 !important;
 }
-.login .form-check a {
+.form-check a {
     font-size: small;
     color: #5754A3;
     text-decoration: none;
 }
-.login .sm {
+.sm {
     background-color: #E37596;
     border: #E37596;
 }
-.login .sm:hover {
+.sm:hover {
     background-color: #F7BDCB;
     color: #5754A3;
 }

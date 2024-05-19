@@ -6,7 +6,7 @@ include "PHPMailer/src/SMTP.php";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 class Mailer {
-    public function createAcc($toEmail, $name, $body) {
+    public function createAcc($toEmail, $body, $subject) {
         // print_r($mail);
         $mail = new PHPMailer(true);   
         $mail->CharSet = "UTF-8";
@@ -35,7 +35,7 @@ class Mailer {
         
             //Content
             $mail->isHTML(true);                                  // Set email format to HTML
-            $mail->Subject = "Tạo tài khoản nhân viên $name";
+            $mail->Subject = $subject;
             $mail->Body    = $body;
             //$mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
         

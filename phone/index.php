@@ -29,15 +29,42 @@
     <link rel="stylesheet" href="css/customer_management_1.css" />
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/forgot_password.css">
 </head>
 <body>
     <div>
     <?php
+    include("config/connect.php");
+    if (isset($_GET['quanly']) && $_GET['quanly'] == 'activate' && isset($_GET['code'])) {
+        $code = $_GET['code'];
+        $activation_query = "SELECT * FROM TAIKHOAN WHERE activation_code = '$code' AND trangthai = 'Chưa kích hoạt'";
+        $result = $mysqli->query($activation_query);
+    
+        if ($result->num_rows > 0) {
+            $row = $result->fetch_assoc();
+            $current_time = date('Y-m-d H:i:s');
+            if ($current_time <= $row['activation_expiry']) {
+                $update_query = "UPDATE TAIKHOAN SET trangthai = 'Đã kích hoạt', activation_code = NULL, activation_expiry = NULL WHERE activation_code = '$code'";
+                if ($mysqli->query($update_query) === TRUE) {
+                    echo "<script>alert('Kích hoạt tài khoản thành công');</script>";
+            } else {
+                echo "<script>alert('Mã kích hoạt không hợp lệ');</script>";
+            }
+        } else {
+            echo "<script>alert('Mã kích hoạt đã hết hạn');</script>";
+        }
+    }
+    else {
+        echo "<script>alert('Mã kích hoạt không hợp lệ');</script>";
+        exit();
+    }
+}
+
         session_start();
         include("pages/header.php");
-        include("config/connect.php");
     ?>
     <?php
+    
     if(isset($_GET['quanly'])) {
         $tam = $_GET['quanly'];
     }
@@ -63,6 +90,15 @@
     elseif($tam == 'signup'){
         include("pages/create_account.php");
     }
+    elseif($tam == 'forgotpassword'){
+        include("pages/forgot-password/forgot_password.php");
+    }
+    elseif($tam == 'changepassword'){
+        include("pages/forgot-password/change_password.php");
+    }
+    elseif($tam == 'otp'){
+        include("pages/forgot-password/otp.php");
+    }
     elseif($tam == 'home&login=true'){
         include("pages/home.php");
     }
@@ -73,6 +109,7 @@
     include("pages/footer.php")
     ?>
     </div>
+
     <script>
         <?php
     // Truy vấn cơ sở dữ liệu để lấy danh sách sản phẩm
@@ -102,5 +139,8 @@
     <script src="js/check_Login.js"></script>
     <script src="js/check_Sdt.js"></script>
     <script src="js/check_InfoKHM.js"></script>
+    <script src="js/check_Email.js"></script>
+    <script src="js/check_OTP.js"></script>
+    <script src="js/check_ChangePass.js"></script>
 </body>
 </html>

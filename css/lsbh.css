@@ -1,0 +1,272 @@
+.customer-management-2 {
+    background: #FFFFFF;
+    display: flex;
+    padding: 0 3px 98px 0;
+    width: 1440px;
+    box-sizing: border-box;
+  }
+.arrow-down-sign-to-navigate-8 {
+    background: url('../phone/assets/images/arrow-down.png') 50% / cover no-repeat;
+    position: absolute;
+    right: 147px;
+    bottom: 125px;
+    width: 20px;
+    height: 20px;
+}
+.container-6 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: fit-content;
+    box-sizing: border-box;
+}
+.avt {
+    border-radius: 150px;
+    background: url('../phone/assets/images/ellipse_7.png') 50% / cover no-repeat;
+    margin-bottom: 39.5px;
+    align-self: center;
+    width: 200px;
+    height: 200px;
+}
+.ten {
+    margin: 0 16.4px 32.5px 0;
+    display: inline-block;
+    align-self: center;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+.container-3 {
+    border-radius: 20px;
+    border: 1px solid #E37596;
+    position: relative;
+    display: flex;
+    padding: 20px; /* Giảm padding */
+    margin: 0 auto; /* Căn giữa container */
+    width: 60%; /* Chiều rộng cụ thể */
+    max-width: 1400px; /* Giới hạn chiều rộng tối đa */
+    box-sizing: border-box;
+}
+
+.container-3::before {
+    content: '';
+    border-left: 1px solid #E37596; /* Tạo đường viền dọc */
+    height: 100%; /* Chiều cao bằng chiều cao của container */
+    position: absolute;
+    top: 0;
+    left: 50%; /* Đặt ở giữa container */
+    transform: translateX(-50%); /* Dịch chuyển đường viền về trung tâm */
+}
+.left-content,
+.right-content {
+    flex: 1; /* Chia không gian ngang đều cho hai phần */
+}
+
+.vertical-line {
+    width: 1px;
+    height: 100%;
+    background-color: #E37596;
+    margin: 0 20px; /* Khoảng cách giữa đường line và nội dung */
+}
+.hoten {
+    margin: 0 1px 26.1px 1px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    font-size: 20px;
+    color: #8F8686;
+}
+.line-4 {
+    background: #E37596;
+    margin: 0 0 55.9px 1px;
+    width: 1130px;
+    height: 1px;
+}
+.sodienthoai {
+    margin: 0 0px 26.1px 0px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    font-size: 20px;
+    color: #8F8686;
+  }
+  .line-7 {
+    background: #E37596;
+    margin: 0 1px 55.9px 0;
+    width: 1130px;
+    height: 1px;
+  }
+  .diachi {
+    margin: 0 0px;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    font-size: 20px;
+    color: #8F8686;
+  }
+  .container-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1250px;
+    box-sizing: border-box;
+  }
+  .lsbh {
+    margin: 0 24px 59.5px 100px;
+      display: inline-block;
+      width: 991px;
+      overflow-wrap: break-word;
+      font-family: 'JetBrains Mono';
+      font-weight: 700;
+      left: 500px;
+      font-size: 25px;
+      color: #000000;
+  }
+  .left-content p,
+    .right-content p {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 28px; 
+    color: #5754A3;
+    margin: 0;
+    text-align: center; /* Căn giữa nội dung */
+    line-height: 1.2; /* Điều chỉnh khoảng cách dòng */
+}
+
+  .btn-next-2 {
+    width: 225px;
+    height: 66px;
+    border-radius: 15px;
+    border: 1px solid #FEB5CA;
+    background: #E37596;
+    font-family: 'JetBrains Mono';
+    font-weight: 700;
+    font-size: 30px;
+    color: #FFF3F3;
+    position: absolute;
+    top: 730px;
+    bottom: 10px;
+    left: 1104px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 66px;
+  }
+  .container-1 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 70%; /* Đặt chiều rộng cụ thể, ví dụ 70% */
+    max-width: 1000px; /* Giới hạn chiều rộng tối đa */
+    margin: 0 auto; /* Căn giữa container */
+    border: 1px solid #E37596; /* Thêm viền để dễ nhìn */
+    padding: 20px; /* Thêm khoảng cách bên trong container */
+}
+
+  .container-4 {
+    border-radius: 10px;
+    border: 1px solid #E37596;
+    position: relative;
+    flex-direction: column;
+    padding: 31.5px 0 71.5px 37px;
+    box-sizing: border-box;
+}
+
+.container-4 > div {
+    width: 100%; /* Đảm bảo các phần tử con chiếm toàn bộ chiều rộng */
+    margin-bottom: 10px; /* Tùy chọn: Thêm khoảng cách giữa các phần tử con */
+}
+
+  .xemchitiet {
+    position: absolute;
+    right: 104.8px;
+    bottom: 13px;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #5754A3;
+  }
+  .madon {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .mavach {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .tongtien {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .tiendua {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .tienthua {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .ngaymua {
+    margin-bottom: 5px;
+    display: inline-block;
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .soluong {
+    align-self: flex-start;
+    overflow-wrap: break-word;
+    font-family: 'JetBrains Mono';
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+  }
+  .arrow-down-sign-to-navigate-9 {
+    background: url('../phone/assets/images/arrow-down.png') 50% / cover no-repeat;
+    position: absolute;
+    right: 64px;
+    bottom: 27px;
+    width: 20px;
+    height: 20px;
+  }

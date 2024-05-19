@@ -1,0 +1,21 @@
+body {
+    font-family: "JetBrains Mono", monospace;
+    box-sizing: border-box;
+}
+footer .footer-social {
+    background: white;
+}
+footer .footer-social .logo {
+    height: 2rem;
+    width: auto;
+}
+footer .footer-copyright {
+    background: #EF99AE;
+}
+footer .footer-copyright .logo-copyright {
+    height: 1.5rem;
+    width: auto;
+}
+footer .footer-copyright .footer-content {
+    font-size: 1rem;
+}

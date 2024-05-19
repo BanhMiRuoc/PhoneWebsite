@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/add_product.css">
     <!-- add js -->
 </head>
 <body>
@@ -41,7 +42,8 @@
         <?php
             include("admincp/config/config.php");
             include("pages/header.php");
-            include("pages/main.php");
+            include("pages/add_product.php");
+            // include("pages/main.php");
             // include("admincp/modules/menu.php");
             include("pages/footer.php");
         ?>

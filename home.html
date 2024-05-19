@@ -84,154 +84,70 @@
         </p>
       </div>
     </div>
-    <div class="row d-flex align-items-center container">
-      <div class="col-2 mb-2">
-        <div class="dropdown">
-          <button class="btn text-body-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
-            Theo ngày
-          </button>
-          <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+    <!-- body main -->
+    <div class="form_lecture">
+      <div class="d-flex justify-content-center">
+        <p class="title fs-3">Thêm tài liệu</p>
+      </div>
+      <div class="container">
+        <div class="container border p-5 mb-5">
+          <div class="mb-3 row">
+            <label for="nameLecture" class="col-sm-2 col-form-label">Tên tài liệu:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="input_nameLecture" placeholder="Tên tài liệu môn học"
+                name="input_nameLecture">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="contentLecture" class="col-sm-2 col-form-label">Nội dung tài liệu:</label>
+            <div class="col-sm-10">
+              <textarea class="form-control" id="input_contentLecture" name="input_contentLecture" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="pictureLecture" class="col-sm-2 col-form-label">Ảnh bìa tài liệu:</label>
+            <div class="col-sm-10">
+              <input type="file" class="form-control" id="input_pictureLecture">
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="fileLecture" class="col-sm-2 col-form-label">File Tài liệu môn học:</label>
+            <div class="col-sm-10">
+              <input type="file" class="form-control" id="input_fileLecture" multiple>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-10">
+              <button class="btn btn-primary" type="submit">Thêm tài liệu</button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="col-3">
-        <div class="choose-day d-flex">
-          <div class="first day mt-2">
-            <p class="content text-body-secondary p-2">Start day</p>
-          </div>
-          <div class="second day mt-2">
-            <p class="content text-body-secondary p-2">End day</p>
-          </div>
-          <div class="p-1">
-            <img src="assets/images/calendar.png" alt="icon calendar" class="icon-calendar align-self-center">
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <button class="btn btn-white search text-white mb-2">Search</button>
-      </div>
-    </div>
-    <div class="view">
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Ngày</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Tổng tiền đã nhận</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Số lượng đơn hàng</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Số lượng bán ra</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">21/4/2024</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">240$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">20</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">30</div>
-        </div>
-      </div> 
     </div>
   </div>
-  <!-- body main -->
-
+  <!-- link jquery cdn trinh soan thao van ban-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <!-- ckeditor 5-->
+  <script src="https://cdn.ckeditor.com/ckeditor5/41.3.1/classic/ckeditor.js"></script>
+  <script>
+    ClassicEditor
+      .create(document.querySelector('#input_contentLecture'))
+      .then(editor => {
+        console.log(editor);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+    ClassicEditor
+      .create(document.querySelector('#input_nameLecture'))
+      .then(editor => {
+        console.log(editor);
+      })
+      .catch(error => {
+        console.error(error);
+      });
+  </script>
   <!-- body main -->
   <footer class="footer">
     <div class="row footer-social shadow-lg">

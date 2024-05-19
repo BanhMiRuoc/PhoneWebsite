@@ -14,6 +14,7 @@
                 include("pages/login.php");
             }
             else {
+                include("pages/categories.php");
                 include("pages/main/main_no_register.php");
             }
         ?>

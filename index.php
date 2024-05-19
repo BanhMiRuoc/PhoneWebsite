@@ -34,6 +34,7 @@
 <body>
     <div>
         <?php
+            include("admincp/config/config.php");
             include("pages/header.php");
             include("pages/main.php");
             // include("admincp/modules/menu.php");

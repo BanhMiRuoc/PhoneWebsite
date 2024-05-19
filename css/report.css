@@ -1,0 +1,28 @@
+.report .menu {
+    background: #FDE4E4;
+}
+.report .menu .content {
+    color: #5754A3;
+    font-size: 1.3rem;
+}
+.address {
+    color: #5754A3;
+}
+
+.report .address img {
+    height: 1rem;
+    width: auto;
+}
+.report .view,
+.report .choose-day .day p,
+.report .dropdown .btn {
+    border: 2px solid #F7BDCB;
+    border-radius: 10px;
+}
+.report .choose-day .icon-calendar {
+    height: 3rem;
+    width: auto;
+}
+.report .search {
+    background: #F7BDCB;
+}

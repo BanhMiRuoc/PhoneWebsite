@@ -2,9 +2,9 @@
     <div class="row container">
         <div class="address container">
         <p class="login-address-content text-uppercase fw-bold">
-            HOME
+            Product Management
             <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
-            Report
+            Add Product
         </p>
         </div>
     </div>

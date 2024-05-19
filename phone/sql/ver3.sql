@@ -136,9 +136,9 @@ USE CUOIKY;
 
 -- Dữ liệu mẫu cho bảng Taikhoan
 INSERT INTO `taikhoan`(`tentk`, `mk`, `quyen`, `trangthai`) VALUES
-('user1', 'password1', 'admin', 'Đã kích hoạt'),
-('user2', 'password2', 'user', 'Chưa kích hoạt'),
-('user3', 'password3', 'user','Đã kích hoạt');
+('user1', 'password1', 'AD', 'Đã kích hoạt'),
+('user2', 'password2', 'NV', 'Chưa kích hoạt'),
+('user3', 'password3', 'KH','Đã kích hoạt');
 
 -- Dữ liệu mẫu cho bảng Nhanvien
 INSERT INTO `Nhanvien` (`hoten`, `email`, `gioitinh`, `chucvu`, `sodienthoai`, `trangthai`, `avatar`, `tentk`) VALUES
@@ -147,8 +147,7 @@ INSERT INTO `Nhanvien` (`hoten`, `email`, `gioitinh`, `chucvu`, `sodienthoai`, `
 
 -- Dữ liệu mẫu cho bảng Khachhang
 INSERT INTO `Khachhang` (`hoten`, `diachi`, `sodienthoai`, `tentk`) VALUES
-('Le Van C', '123 Đường ABC, TP HCM', '0912345678', 'user3'),
-('Hoang Thi D', '456 Đường DEF, Hà Nội', '0998765432', NULL);
+('Le Van C', '123 Đường ABC, TP HCM', '0912345678', 'user3');
 
 INSERT INTO Sanpham (phanloai, giagoc, giaban, anhsp, tensp, mavach, daban, tonkho, ngaysanxuat) VALUES
 ('Apple', 10000000, 12000000, LOAD_FILE('/path/to/iphone_image.jpg'), 'iPhone 13', '1234567890123', 50, 100, '2023-05-01'),

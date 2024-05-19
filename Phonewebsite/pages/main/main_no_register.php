@@ -61,44 +61,35 @@
         </ul>
     </div>
 </div>
-<!-- slider -->
-<div class="slider">
-<div class="slider-left">
-    <img src="assets/images/xiaomi_13_tthumb_yt_1020_x_5701.jpeg" width="312" height="170" alt="">
-    <img src="assets/images/nokia_g_11_plus_thumb_video_1020_x_5701.jpeg" width="312" height="170" alt="">
-</div>
-<div id="main-slider" class="carousel slide" data-bs-ride="carousel">
+<!-- slider --> 
+<!-- new -->
+<div id="banner" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
-        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#main-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-        <img src="assets/images/samsung_zfoldf_mobi_78412001.png"  width="915" height="350" alt="">
+        <img class="d-block w-100" src="assets/images/banner1.jpg"  alt="">
         </div>
         <div class="carousel-item">
-        <img src="assets/images/oppo_f_1711.jpeg"  width="915" height="350" alt="">
+        <img class="d-block w-100" src="assets/images/boulderbannerupdated.png"  alt="">
         </div>
         <div class="carousel-item">
-        <img src="assets/images/vi_vn_iphone_15_pro_max_41020_x_5701.jpeg"   width="915" height="350" alt="">
+        <img class="d-block w-100" src="assets/images/banner3.png" alt="">
         </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#main-slider" data-bs-slide="prev">
+    <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#main-slider" data-bs-slide="next">
+    <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
     </button>
-    </div>
-    <div class="slider-right">
-        <img src="assets/images/vivo_y_36_mobi_23012001.png"  width="310" height="110" alt="">
-        <img src="assets/images/realme.jpeg"  width="310" height="150" alt="">
-        <img src="assets/images/realme_c_30_s_3_gb_64_gb_6381699460681872151.jpeg"  width="310" height="80" alt="">
-    </div>
 </div>
+<!--  -->
 <!-- popular product -->
 <section class="list-phone m-4">
     <h2>ĐIỆN THOẠI NỔI BẬT</h2>

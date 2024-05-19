@@ -25,8 +25,6 @@
     <link rel="icon" type="image/x-icon" href="logo.png">
     <!-- Add css -->
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/main_no_register.css">
-    <link rel="stylesheet" href="css/customer_management_1.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/create_account.css">
     <!-- add js -->

@@ -98,19 +98,19 @@ $(document).ready(function() {
                             '<div class="card-body">' +
                                 '<h5 class="card-title">' + products[i].title + '</h5>' +
                                 '<div class="test">' +
-                                '<div class="price-rating">' +
-                                    '<p class="card-price" style="color:red; font-size:1.25rem;">' + products[i].price + '</p>' +
-                                    '<div class="rating">' +
-                                    '<input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>' +
-                                    '<input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>' +
-                                    '<input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>' +
-                                    '<input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>' +
-                                    '<input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>' +
+                                    '<div class="price-rating">' +
+                                        '<p class="card-price" style="color:red; font-size:1.25rem;">' + products[i].price + '</p>' +
+                                        '<div class="rating">' +
+                                                '<input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>' +
+                                                '<input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>' +
+                                                '<input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>' +
+                                                '<input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>' +
+                                                '<input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>' +
+                                        '</div>' +
                                     '</div>' +
-                                '</div>' +
-                                '<button class="add-cart">' +
-                                    '<img src="assets/images/add-to-card.png" width="50px" height="50px" alt="">' +
-                                '</button>' +
+                                    '<button class="add-cart">' +
+                                        '<img src="assets/images/add-to-card.png" width="50px" height="50px" alt="">' +
+                                    '</button>' +
                                 '</div>' +
                             '</div>' +
                             '</div>';

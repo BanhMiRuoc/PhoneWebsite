@@ -41,24 +41,75 @@
             <div class="content">
                 <h1>PRODUCT</h1>
                 <div class="container">
-                    <div class="filter-container">
-                        <select class="filter-dropdown">
-                            <option value="Filter">Filter</option>
-                            <option value="Iphone">Iphone</option>
-                            <option value="samsung">Samsung</option>
-                            <option value="Oppo">Oppo</option>
-                            <option value="Xiaomi">Xiaomi</option>
-                            <option value="Nokia">Nokia</option>
-                            <option value="Vivo">Vivo</option>
-                        </select>
+                    <div class="feature">
+                        <!-- filter -->
+                        <div class="btn btn-filter">
+                            <select class="filter-dropdown" id="filterCategory">
+                                <option value="Filter">Filter</option>
+                                <option value="Iphone">Iphone</option>
+                                <option value="samsung">Samsung</option>
+                                <option value="Oppo">Oppo</option>
+                                <option value="Xiaomi">Xiaomi</option>
+                                <option value="Nokia">Nokia</option>
+                                <option value="Vivo">Vivo</option>
+                            </select>
+                        </div>
+                        <!-- add product -->
+                        <div class="btn btn-add">
+                            <button type="submit">Add product</button>
+                        </div>
+                        <!-- delete product -->
+                        <div class="btn btn-del">
+                            
+                            <button type="submit">Delete product</button>
+                        </div>
+                        <!-- edit product -->
+                        <div class="btn btn-edit">
+                            <button type="submit">Edit product</button>
+                        </div>
+                    </div> 
+                    <div class="container-table">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th><input type="checkbox" id="selectAll"></th>
+                                <th>Name</th>
+                                <th>Origin price</th>
+                                <th>Price</th>
+                                <th>Category</th>
+                                <th>Inventory</th>
+                                <th>Date</th>
+                                <th><button>More</button></th>
+                            </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <?php for ($i = 1; $i <= 10; $i++) { ?>
+                                    <tr>
+                                    <td><input type="checkbox" class="rowCheckbox"></td>
+                                    <td>Name</td>  <td>Origin Price</td>  <td>Price</td>  <td>Iphone</td>  <td>Inventory</td>  <td>Date</td>  <td><button>Edit</button></td>  </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
+                        <script>
+                            const selectAll = document.getElementById('selectAll');
+                            const rowCheckboxes = document.querySelectorAll('.rowCheckbox');
+
+                            selectAll.addEventListener('change', (event) => {
+                            const isChecked = event.target.checked;
+                            rowCheckboxes.forEach(checkbox => checkbox.checked = isChecked);
+                            });
+
+                            rowCheckboxes.forEach(checkbox => {
+                            checkbox.addEventListener('change', () => {
+                                const allChecked = [...rowCheckboxes].every(box => box.checked);
+                                selectAll.checked = allChecked;
+                            });
+                            });
+                        </script>
                     </div>
-                    <div class="product-container">
-                        <div class="product electronics">Product 1 (Electronics)</div>
-                        <div class="product clothing">Product 2 (Clothing)</div>
-                        <option class="product electronics">Product 3 (Electronics)</option> <div class="product clothing">Product 4 (Clothing)</div>
-                    </div>
-                    <script src="script.js"></script>
-                </div> 
+                    
+                </div>
             </div>
         </div>
         <div class="footer"><?php include("pages/footer.php"); ?></div>

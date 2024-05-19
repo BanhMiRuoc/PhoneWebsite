@@ -27,266 +27,149 @@
   <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
   <link href="bootstrap-rating.css" rel="stylesheet">
   <script type="text/javascript" src="bootstrap-rating.js"></script>
-  <link rel="stylesheet" href="css/forgot_password.css">
+  <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/detail_product.css">
   <title>MeoPhones</title>
-  <style>
-    /*css header*/
-    body {
-      color: #5754A3 !important;
-      font-family: "JetBrains Mono", monospace;
-    }
-
-    .navbar {
-      flex-wrap: nowrap;
-      width: 100%;
-      height: 4.5rem;
-      background-color: #F7BDCB !important;
-      justify-content: start;
-    }
-
-    a.navbar-brand {
-      margin-left: 10%;
-      margin-top: 0.5rem;
-      text-align: center;
-      font-family: "Jockey One", sans-serif !important;
-      font-size: 2.5rem;
-      color: #5754A3 !important;
-    }
-
-    .form-control {
-      margin-left: 5%;
-      margin-top: 0.5rem;
-      border-radius: 2rem 0 0 2rem !important;
-    }
-
-    .search-btn {
-      margin-top: 0.5rem;
-      border-radius: 0 2rem 2rem 0 !important;
-    }
-
-    .nav-btn {
-      margin-left: 2%;
-      margin-top: 1.5rem;
-    }
-
-    p {
-      font-size: 0.8rem;
-    }
-
-    .form-inline {
-      width: 40%;
-    }
-
-    .icon-img {
-      margin-left: 10px;
-    }
-
-    /*css body*/
-    .menu {
-      justify-content: space-around;
-      box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-      margin-bottom: 2%;
-    }
-
-    .menu,
-    .slider,
-    .slider-left,
-    .slider-right {
-      display: flex;
-      justify-content: center;
-    }
-
-    .slider-left,
-    .slider-right {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .slider {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .card-body {
-      cursor: pointer;
-      padding: 0 0 0 1em;
-    }
-
-    .rating {
-      display: flex;
-      flex-direction: row-reverse;
-    }
-
-    .card-body p {
-      margin-block-start: 0;
-      margin-block-end: 0;
-    }
-
-    .rating>input {
-      display: none
-    }
-
-    .rating>label {
-      position: relative;
-      width: 1em;
-      font-size: 30px;
-      font-weight: 300;
-      color: #FFD600;
-      cursor: pointer;
-    }
-
-    .rating>label::before {
-      content: "\2605";
-      position: absolute;
-      opacity: 0
-    }
-
-    .rating>label:hover:before,
-    .rating>label:hover~label:before {
-      opacity: 1 !important
-    }
-
-    .rating>input:checked~label:before {
-      opacity: 1
-    }
-
-    .rating:hover>input:checked~label:before {
-      opacity: 0.4
-    }
-
-    .test {
-      display: flex;
-      justify-content: space-between;
-      flex-direction: row;
-      align-items: center;
-    }
-
-    .add-cart {
-      margin-right: 1.7rem;
-      border: none;
-      background-color: white;
-    }
-
-    #product-container {
-      display: flex;
-      justify-content: center;
-    }
-  </style>
 </head>
 
 <body>
-  <!-- header include navigation, menu product and slider-->
-  <header>
-    <!-- navbar -->
+  <header class="header">
     <nav class="navbar navbar-light bg-light jusify-content-none">
-      <a href="Home" class="navbar-brand">
+      <a href="index.php" class="navbar-brand">
         <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
         MeoPhones
       </a>
-      <form class="form-inline">
+      <form class="form-inline" action="modules/sanpham/finding.php" method="GET">
         <div class="input-group">
           <input class="form-control border-end-0 border rounded-pill" type="search" value="search"
             id="example-search-input">
           <button class="btn search-btn btn-outline-secondary border border-start-0 bg-white border-pill ms-n5"
-            type="button">
+            type="submit" name="tukhoa" value="Tìm kiếm">
             <img src="assets/images/magnifying_glass.png" width="40" height="40" alt="">
           </button>
         </div>
       </form>
       <button class="btn nav-btn">
         <div class="navbar-brand d-flex flex-column">
-          <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
-          <p>Giỏ hàng</p>
+          <a href="index.php?user=cart">
+            <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
+            <p>Giỏ hàng</p>
+          </a>
         </div>
       </button>
       <button class="btn nav-btn">
         <div class="navbar-brand d-flex flex-column">
-          <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
-          <p>Tài khoản</p>
+          <a href="index.php?user=login">
+            <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+            <p>Tài khoản</p>
+          </a>
         </div>
       </button>
     </nav>
-    <!-- menu product -->
-    <div class="address container">
-      <div class="p-2">
-        <p class="login-address-content text-uppercase fw-bold">
-          HOME
-          <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
-          Detail
-        </p>
-      </div>
+  </header>
+  <!-- menu product -->
+  <div class="address container">
+    <div class="p-2">
+      <p class="login-address-content text-uppercase fw-bold">
+        HOME
+        <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
+        Detail
+      </p>
     </div>
-    <!-- body main -->
-    <div class="col-md-3 mb-4"> +
-      <div class="card" style="width: 100%;"> +
-        <img class="card-img-top" src=" + products[i].imgSrc + " alt="Card image cap"> +
-        <div class="card-body"> +
-          <h5 class="card-title"> + products[i].title + </h5> +
-          <div class="test"> +
-            <div class="price-rating"> +
-              <p class="card-price" style="color:red; font-size:1.25rem;"> + products[i].price + </p> +
-              <div class="rating"> +
-                <input type="radio" name="rating + i + " value="1" id="1- + i + "><label
-                  for="1- + i + ">☆</label> +
-                <input type="radio" name="rating + i + " value="2" id="2- + i + "><label
-                  for="2- + i + ">☆</label> +
-                <input type="radio" name="rating + i + " value="3" id="3- + i + "><label
-                  for="3- + i + ">☆</label> +
-                <input type="radio" name="rating + i + " value="4" id="4- + i + "><label
-                  for="4- + i + ">☆</label> +
-                <input type="radio" name="rating + i + " value="5" id="5- + i + "><label
-                  for="5- + i + ">☆</label> +
-                </div> +
-              </div> +
-            <button class="add-cart"> +
-              <img src="assets/images/add-to-card.png" width="50px" height="50px" alt=""> +
-              </button> +
-            </div> +
-          </div> +
-        </div> +
-      </div>;
-    <!-- body main -->
-    </section>
-    <footer class="footer">
-      <div class="row footer-social shadow-lg">
-        <div class="container-fluid d-flex justify-content-center my-3">
-          <!-- facebook -->
-          <a href="#">
-            <img src="assets/images/image_2.png" alt="logo Facebook" class="logo me-4">
-          </a>
-          <!-- youtube -->
-          <a href="#">
-            <img src="assets/images/image_3.png" alt="logo Youtube" class="logo me-4">
-          </a>
-          <!-- instagram -->
-          <a href="#">
-            <img src="assets/images/image_4.png" alt="logo Instagram" class="logo me-4">
-          </a>
-          <!-- tiktok -->
-          <a href="#">
-            <img src="assets/images/image_5.png" alt="logo Tiktok" class="logo me-4">
-          </a>
-          <!-- github -->
-          <a href="https://github.com/BanhMiRuoc/PhoneWebsite">
-            <img src="assets/images/image_6.png" alt="logo Github" class="logo me-4">
-          </a>
+  </div>
+  <!-- body main -->
+  <div class="detail-product container">
+    <h1 class="product-name">iPhone 15 Pro Max</h1>
+    <div class="row">
+      <div class="col">
+        <div class="product-img d-flex justify-content-center mt-3">
+          <img src="assets/images/cu_sac_nhanh_iphone_20_wchinh_hang_21.jpeg" alt="" class="product-img">
         </div>
       </div>
-      <div class="row footer-copyright">
-        <div class="container-fluid content d-flex justify-content-center">
-          <div class="mt-3">
-            <p class="footer-content fw-bold">
-              Copyright
-              <img src="assets/images/image_7.png" alt="Logo Copyright" class="logo-copyright">
-              2024; Designed by MeoTeam
-            </p>
+      <div class="col">
+        <div class="row product-content">
+          <div class="col mt-4">
+            <div class="row">
+              <p class="title-content fw-bold">Giá gốc:</p>
+              <p class="content">30.99$</p>
+            </div>
+            <div class="row">
+              <p class="title-content fw-bold">Giá bán:</p>
+              <p class="content">34.99$</p>
+            </div>
+            <div class="row">
+              <p class="title-content fw-bold">Phân loại hàng hóa:</p>
+              <p class="content">Hãng Apple</p>
+            </div>
+            <div class="btn-content my-5">
+              <button class="btn fw-bold">
+                <p class="mt-2">Sửa thông tin</p>
+              </button>
+            </div>
+          </div>
+          <div class="col mt-4">
+            <div class="row">
+              <p class="title-content fw-bold">Đã bán:</p>
+              <p class="content">45</p>
+            </div>
+            <div class="row">
+              <p class="title-content fw-bold">Tồn kho</p>
+              <p class="content">15</p>
+            </div>
+            <div class="row">
+              <p class="title-content fw-bold">Ngày sản xuất</p>
+              <p class="content">06/04/2024</p>
+            </div>
+            <div class="btn-content my-5">
+              <button class="btn fw-bold">
+                <p class="mt-2">Xóa sản phẩm</p>
+              </button>
+            </div>
           </div>
         </div>
       </div>
-    </footer>
-    <script href="js/main_no_register.js"></script>
+    </div>
+  </div>
+  <!-- body main -->
+  <footer class="footer">
+    <div class="row footer-social shadow-lg">
+      <div class="container-fluid d-flex justify-content-center my-3">
+        <!-- facebook -->
+        <a href="#">
+          <img src="assets/images/image_2.png" alt="logo Facebook" class="logo me-4">
+        </a>
+        <!-- youtube -->
+        <a href="#">
+          <img src="assets/images/image_3.png" alt="logo Youtube" class="logo me-4">
+        </a>
+        <!-- instagram -->
+        <a href="#">
+          <img src="assets/images/image_4.png" alt="logo Instagram" class="logo me-4">
+        </a>
+        <!-- tiktok -->
+        <a href="#">
+          <img src="assets/images/image_5.png" alt="logo Tiktok" class="logo me-4">
+        </a>
+        <!-- github -->
+        <a href="https://github.com/BanhMiRuoc/PhoneWebsite">
+          <img src="assets/images/image_6.png" alt="logo Github" class="logo me-4">
+        </a>
+      </div>
+    </div>
+    <div class="row footer-copyright">
+      <div class="container-fluid content d-flex justify-content-center">
+        <div class="mt-3">
+          <p class="footer-content fw-bold">
+            Copyright
+            <img src="assets/images/image_7.png" alt="Logo Copyright" class="logo-copyright">
+            2024; Designed by MeoTeam
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script href="js/main_no_register.js"></script>
 </body>
 
 </html>

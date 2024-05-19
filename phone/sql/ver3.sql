@@ -5,8 +5,13 @@ CREATE TABLE IF NOT EXISTS Taikhoan (
     tentk VARCHAR(30),
     mk VARCHAR(30),
 	quyen varchar(5),
+	activation_expiry DATETIME,
+	activation_code VARCHAR(255),
+	trangthai ENUM('Chưa kích hoạt', 'Đã kích hoạt') DEFAULT 'Chưa kích hoạt',
     PRIMARY KEY (tentk)
 );
+
+
 CREATE TABLE IF NOT EXISTS Nhanvien (
     manhanvien VARCHAR(30),
     hoten TEXT,
@@ -127,9 +132,39 @@ END //
 
 DELIMITER ;
 
+USE CUOIKY;
+
+-- Dữ liệu mẫu cho bảng Taikhoan
+INSERT INTO `taikhoan`(`tentk`, `mk`, `quyen`, `trangthai`) VALUES
+('user1', 'password1', 'admin', 'Đã kích hoạt'),
+('user2', 'password2', 'user', 'Chưa kích hoạt'),
+('user3', 'password3', 'user','Đã kích hoạt');
+
+-- Dữ liệu mẫu cho bảng Nhanvien
+INSERT INTO `Nhanvien` (`hoten`, `email`, `gioitinh`, `chucvu`, `sodienthoai`, `trangthai`, `avatar`, `tentk`) VALUES
+('Nguyen Van A', 'nguyenvana@example.com', 'Nam', 'Manager', '0123456789', 'Đang làm việc', NULL, 'user1'),
+('Tran Thi B', 'tranthib@example.com', 'Nu', 'Staff', '0987654321', 'Nghỉ việc', NULL, 'user2');
+
+-- Dữ liệu mẫu cho bảng Khachhang
+INSERT INTO `Khachhang` (`hoten`, `diachi`, `sodienthoai`, `tentk`) VALUES
+('Le Van C', '123 Đường ABC, TP HCM', '0912345678', 'user3'),
+('Hoang Thi D', '456 Đường DEF, Hà Nội', '0998765432', NULL);
+
 INSERT INTO Sanpham (phanloai, giagoc, giaban, anhsp, tensp, mavach, daban, tonkho, ngaysanxuat) VALUES
 ('Apple', 10000000, 12000000, LOAD_FILE('/path/to/iphone_image.jpg'), 'iPhone 13', '1234567890123', 50, 100, '2023-05-01'),
 ('Samsung', 8000000, 9500000, LOAD_FILE('/path/to/samsung_image.jpg'), 'Samsung Galaxy S21', '1234567890124', 30, 50, '2023-04-01'),
 ('Oppo', 6000000, 7500000, LOAD_FILE('/path/to/oppo_image.jpg'), 'Oppo Reno 5', '1234567890125', 40, 70, '2023-03-01'),
 ('Xiaomi', 5000000, 6500000, LOAD_FILE('/path/to/xiaomi_image.jpg'), 'Xiaomi Mi 11', '1234567890126', 20, 80, '2023-02-01'),
 ('Nokia', 3000000, 4000000, LOAD_FILE('/path/to/nokia_image.jpg'), 'Nokia 5.3', '1234567890127', 10, 60, '2023-01-01');
+
+-- Dữ liệu mẫu cho bảng Hoadon
+INSERT INTO `Hoadon` (`tongtien`, `tienkhdua`, `tienthua`, `ngaylapdon`, `soluongsp`, `manhanvien`, `makhachhang`) VALUES
+(7000000, 7000000, 0, '2023-03-01', 1, 'NV000001', 'KH000001'),
+(15000000, 15000000, 0, '2023-04-01', 1, 'NV000002', 'KH000002');
+
+-- Dữ liệu mẫu cho bảng Chitiethoadon
+INSERT INTO Chitiethoadon (mahd, mavach, dongia, mota, soluong) VALUES
+('HD000001', 'M000001', 7000000, 'Mua iPhone 13', 1),
+('HD000002', 'M000002', 15000000, 'Mua MacBook Pro', 1);
+-- Dữ liệu mẫu cho bảng Sequence (đã có sẵn, không cần thêm dữ liệu mẫu)
+-- Nếu cần, bạn có thể chạy lại lệnh INSERT để đặt lại các giá trị ban đầu của Sequence

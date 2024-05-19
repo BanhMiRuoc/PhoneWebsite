@@ -15,9 +15,7 @@
         <div class="logo"></div>
         <p style="position: absolute; top: 25%; bottom: 10px; left: 0; right: 0; text-align: center; color: #E37596; font-size: 20px; font-family: 'JetBrains Mono';">Vui lòng nhập số điện thoại của khách hàng tra cứu</p>
         <p style="position: absolute; top: 35%; bottom: 10px; left: 15%; right: 0; color: #5754A3; font-size: 20px; font-family: 'JetBrains Mono'; font-weight:bold;">Số điện thoại</p>
-        <form id="customerForm" method="POST" action="modules/sanpham/checkSDT.php">
-          <input type="text" class="textbox-input" name="sdt" id="sdt">
-          <span><button class="btn-next" name="btn_cont" type="submit">CONTINUE</button></span>
-        </form>
+        <input type="text" class="textbox-input">
+        <span><a href="cm2_1.html" class="btn-next">CONTINUE</a></span>
       </div>
     </div>

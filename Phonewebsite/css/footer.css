@@ -2,13 +2,6 @@ body {
     font-family: "JetBrains Mono", monospace;
     box-sizing: border-box;
 }
-/* footer {
-    position: fixed;
-    left: 0;
-    margin-top: 500px;
-    bottom: 0;
-    width: 100%;
-} */
 footer .footer-social {
     background: white;
 }

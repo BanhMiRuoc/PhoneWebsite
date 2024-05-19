@@ -32,6 +32,9 @@
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/home_admin.css">
+    <link rel="stylesheet" href="css/detail_product.css">
+    <link rel="stylesheet" href="css/add_product.css">
+    <link rel="stylesheet" href="css/report.css">
 </head>
 <body>
     <div>
@@ -95,6 +98,13 @@
     elseif($tam == 'forgotpassword'){
         include("pages/forgot-password/forgot_password.php");
     }
+    elseif($tam == 'report'){
+        include("pages/report.php");
+    }
+    elseif($tam == 'addproduct'){
+        include("pages/admin/navbar.php");
+        include("pages/add_product.php");
+    }
     elseif($tam == 'changepassword'){
         include("pages/forgot-password/change_password.php");
     }
@@ -105,10 +115,27 @@
         include("pages/admin/navbar.php");
         include("pages/home_admin.php");
     }
+    elseif($tam == 'listcustomer'){
+        include("pages/admin/navbar.php");
+        include("pages/list_customer.php");
+    }
+    elseif($tam == 'report'){
+        include("pages/admin/navbar.php");
+        include("pages/report.php");
+    }
+    elseif($tam == 'liststaff'){
+        include("pages/admin/navbar.php");
+        include("pages/list_staff.php");
+    }
+    elseif($tam == 'listcustomer'){
+        include("pages/admin/navbar.php");
+        include("pages/list_customer.php");
+    }
     // elseif($tam == 'lsbh'){
     //     include("pages/lichsubanhang.php");
     // }
     elseif($tam == 'detailproduct'){
+        include("pages/admin/navbar.php");
         include("pages/detail_product.php");
     }
     elseif($tam == 'home&login=true'){
@@ -156,5 +183,6 @@
     <script src="js/check_ChangePass.js"></script>
     <script src="js/home_admin.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/getListProduct.js"></script>
 </body>
 </html>

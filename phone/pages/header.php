@@ -49,18 +49,7 @@
                         <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
                         <p>Tài khoản</p>
                     </div>
-                    </button>
-                    <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
-                        QLTK
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.php?quanly=signup">Tạo tài khoản nhân viên</a></li>
-                        <li><a class="dropdown-item" href="index.php?quanly=cm1">Tìm khách hàng</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </div>';
+                    </button>';
                 }
                 else {
                     echo '<button class="btn nav-btn">

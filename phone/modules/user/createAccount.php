@@ -27,7 +27,7 @@ if (isset($_POST['btn_Create'])) {
     if ($mysqli->query($create_account_query) === TRUE) {
         echo "Tạo tài khoản cho nhân viên mới thành công";
 
-        $insert_query = "INSERT INTO Nhanvien (hoten, email, gioitinh, chucvu, sodienthoai, trangthai, tentk) VALUES ('$name', '$email', '$gender', '$role', null, 'Chưa kích hoạt', '$tentk')";
+        $insert_query = "INSERT INTO Nhanvien (hoten, email, gioitinh, chucvu, sodienthoai, trangthai, tentk) VALUES ('$name', '$email', '$gender', '$role', $phone, 'Chưa kích hoạt', '$tentk')";
 
         if ($mysqli->query($insert_query) === TRUE) {
             echo "Thêm mới nhân viên thành công!";
@@ -40,7 +40,7 @@ if (isset($_POST['btn_Create'])) {
             $mail = new Mailer();
             $mail->createAcc($email, $body, $subject);
 
-            header('Location:../../index.php?quanly=home&login=true');
+            header('Location:../../index.php?quanly=liststaff');
             exit(); // Dừng việc thực thi mã PHP ngay sau khi chuyển hướng
         } else {
             echo "Lỗi thêm nhân viên: " . $mysqli->error;

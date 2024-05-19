@@ -14,7 +14,7 @@
                 </a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php?quanly=homeadmin" class="sidebar-link">
                     <img src="assets/images/product.png" width="17" alt="">
                     <span>Product manager</span>
                 </a>
@@ -27,10 +27,10 @@
                 </a>
                 <ul id="staff-manager" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Create account</a>
+                        <a href="index.php?quanly=signup" class="sidebar-link">Create account</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">List staff</a>
+                        <a href="index.php?quanly=liststaff" class="sidebar-link">List staff</a>
                     </li>
                 </ul>
             </li>
@@ -42,15 +42,12 @@
                 </a>
                 <ul id="customer-manager" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Create account</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">List staff</a>
+                        <a href="index.php?quanly=listcustomer" class="sidebar-link">List customer</a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php?quanly=report" class="sidebar-link">
                     <img src="assets/images/report.png" width="20" alt="">
                     <span>Report</span>
                 </a>
@@ -66,7 +63,7 @@
                         <a href="#" class="sidebar-link">View infomation</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Change password</a>
+                        <a href="index.php?quanly=changepassword" class="sidebar-link">Change password</a>
                     </li>
                 </ul>
             </li>

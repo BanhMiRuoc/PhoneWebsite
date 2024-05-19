@@ -1,6 +1,6 @@
-<header class="header">
+<header>
     <nav class="navbar navbar-light bg-light jusify-content-none">
-        <a href="index.php" class="navbar-brand">
+        <a href="Home" class="navbar-brand">
             <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
             MeoPhones
         </a>
@@ -17,12 +17,61 @@
                 <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
                 <p>Giỏ hàng</p>
             </div>
-        </button>
-        <button class="btn nav-btn">
-            <div class="navbar-brand d-flex flex-column">
-                <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
-                <p>Tài khoản</p>
-            </div>
-        </button>
+        </button> -->
+        <?php
+            // Kiểm tra xem người dùng đã đăng nhập hay chưa
+            if(isset($_GET['quanly'])) {
+                $loggedIn = $_GET['quanly'];
+            }
+            else {
+                $loggedIn = '';
+            }
+            // Nếu người dùng chưa đăng nhập
+            if ($loggedIn == '' || $loggedIn == 'login' || $loggedIn == 'activate') {
+                echo '<button class="btn nav-btn" id="loginBtn">
+                        <div class="navbar-brand d-flex flex-column">
+                            <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                            <p>Đăng nhập</p>
+                        </div>
+                    </button>';
+            } else {
+
+                // Nếu người dùng đã đăng nhập
+                if($_SESSION['username'] != $_SESSION['password']){
+                    echo '<button class="btn nav-btn">
+                        <div class="navbar-brand d-flex flex-column">
+                            <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
+                            <p>Giỏ hàng</p>
+                        </div>
+                    </button>
+                    <button class="btn nav-btn">
+                    <div class="navbar-brand d-flex flex-column">
+                        <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                        <p>Tài khoản</p>
+                    </div>
+                    </button>
+                    <div class="dropdown">
+                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                        QLTK
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.php?quanly=signup">Tạo tài khoản nhân viên</a></li>
+                        <li><a class="dropdown-item" href="index.php?quanly=cm1">Tìm khách hàng</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                    </div>';
+                }
+                else {
+                    echo '<button class="btn nav-btn">
+                        <div class="navbar-brand d-flex flex-column">
+                            <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                            <p>Đăng xuất</p>
+                        </div>
+                    </button>';
+                }
+            }
+        ?>
     </nav>
 </header>
+

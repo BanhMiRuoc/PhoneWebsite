@@ -30,6 +30,8 @@
     <link rel="stylesheet" href="css/login.css" />
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/forgot_password.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/home_admin.css">
 </head>
 <body>
     <div>
@@ -99,6 +101,16 @@
     elseif($tam == 'otp'){
         include("pages/forgot-password/otp.php");
     }
+    elseif($tam == 'homeadmin'){
+        include("pages/admin/navbar.php");
+        include("pages/home_admin.php");
+    }
+    // elseif($tam == 'lsbh'){
+    //     include("pages/lichsubanhang.php");
+    // }
+    elseif($tam == 'detailproduct'){
+        include("pages/detail_product.php");
+    }
     elseif($tam == 'home&login=true'){
         include("pages/home.php");
     }
@@ -142,5 +154,7 @@
     <script src="js/check_Email.js"></script>
     <script src="js/check_OTP.js"></script>
     <script src="js/check_ChangePass.js"></script>
+    <script src="js/home_admin.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

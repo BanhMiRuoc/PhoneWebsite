@@ -1,9 +1,13 @@
 <?php
 include('../../config/connect.php');
+session_start();
 
 if(isset($_POST['btn-login'])) {
     $username = $_POST['username'];
     $password =$_POST['password'];
+
+    $_SESSION['username'] = $username;
+    $_SESSION['password'] = $password;
 
     $sel_account = "SELECT COUNT(*) FROM TAIKHOAN WHERE TENTK = '$username' AND MK='$password'";
 
@@ -13,7 +17,6 @@ if(isset($_POST['btn-login'])) {
     $count = $row[0]; // Lấy giá trị COUNT
 
     if ($count > 0) {
-
         $sel_tt = "SELECT trangthai FROM TAIKHOAN WHERE TENTK = '$username'";
         $result1 = $mysqli->query($sel_tt);
         $row1 = $result1->fetch_row();
@@ -22,8 +25,19 @@ if(isset($_POST['btn-login'])) {
             echo "<script>alert('Vui lòng đăng nhập bằng cách nhấp vào liên kết trong email của bạn');</script>";
         }
         else{
-            header('Location:../../index.php?quanly=home&login=true');
-            exit(); // Dừng việc thực thi mã PHP ngay sau khi chuyển hướng
+            $sel_ttnv = "SELECT trangthai FROM NHANVIEN WHERE TENTK = '$username'";
+            $result2 = $mysqli->query($sel_ttnv);
+            $row2 = $result2->fetch_row();
+            $trangthai1 = $row2[0];
+            if($trangthai1 == "Chưa kích hoạt"){
+                echo "<script>alert('Lần đầu tiên đăng nhập, vui lòng đổi mật khẩu!');</script>";
+                echo "<script>setTimeout(function() { window.location.href = '../../index.php?quanly=changepassword'; }, 1000);</script>";
+                exit();
+            }
+            else{
+                header('Location:../../index.php?quanly=home&login=true');
+                exit(); // Dừng việc thực thi mã PHP ngay sau khi chuyển hướng
+            }
         }
     }
     else {

@@ -7,8 +7,8 @@
 
         <?php
         // session_start();
-        $sdt = $_SESSION['sdt'];
-        $query = "SELECT * FROM KHACHHANG WHERE SODIENTHOAI = '$sdt'";
+        $tentk = $_SESSION['username'];
+        $query = "SELECT * FROM NHANVIEN WHERE TENTK = '$tentk'";
         $result = $mysqli->query($query);
         if ($result->num_rows > 0) :
           $row = $result->fetch_assoc()
@@ -43,8 +43,7 @@
         </div>
 
         <?php
-        $makh = $row["makh"];
-        $query1 = "SELECT * FROM HOADON WHERE MAKH = '$makh'"; //CẦN THÊM ĐIỀU KIỆN LẤY HÓA LÀ MAKH
+        $query1 = "SELECT * FROM HOADON"; //CẦN THÊM ĐIỀU KIỆN LẤY HÓA LÀ MAKH
         $result1 = $mysqli->query($query1);
         ?>
 

@@ -12,12 +12,12 @@
                 </button>
             </div>
         </form>
-        <button class="btn nav-btn">
+        <!-- <button class="btn nav-btn">
             <div class="navbar-brand d-flex flex-column">
                 <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
                 <p>Giỏ hàng</p>
             </div>
-        </button>
+        </button> -->
         <?php
             // Kiểm tra xem người dùng đã đăng nhập hay chưa
             if(isset($_GET['quanly'])) {
@@ -26,8 +26,8 @@
             else {
                 $loggedIn = '';
             }
-            // Nếu người dùng đã đăng nhập, thay đổi nút "Tài khoản" thành "Giỏ hàng"
-            if ($loggedIn == '' || $loggedIn == 'login') {
+            // Nếu người dùng chưa đăng nhập
+            if ($loggedIn == '' || $loggedIn == 'login' || $loggedIn == 'activate') {
                 echo '<button class="btn nav-btn" id="loginBtn">
                         <div class="navbar-brand d-flex flex-column">
                             <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
@@ -35,12 +35,20 @@
                         </div>
                     </button>';
             } else {
-                // Nếu người dùng chưa đăng nhập, thay đổi nút "Tài khoản" thành "Đăng nhập"
-                echo '<button class="btn nav-btn">
+
+                // Nếu người dùng đã đăng nhập
+                if($_SESSION['username'] != $_SESSION['password']){
+                    echo '<button class="btn nav-btn">
                         <div class="navbar-brand d-flex flex-column">
-                            <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
-                            <p>Tài khoản</p>
+                            <img src="assets/images/add-to-card.png" width="40" height="40" alt="Image" class="icon-img">
+                            <p>Giỏ hàng</p>
                         </div>
+                    </button>
+                    <button class="btn nav-btn">
+                    <div class="navbar-brand d-flex flex-column">
+                        <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                        <p>Tài khoản</p>
+                    </div>
                     </button>
                     <div class="dropdown">
                     <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -53,6 +61,15 @@
                         <li><a class="dropdown-item" href="#">Something else here</a></li>
                     </ul>
                     </div>';
+                }
+                else {
+                    echo '<button class="btn nav-btn">
+                        <div class="navbar-brand d-flex flex-column">
+                            <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
+                            <p>Đăng xuất</p>
+                        </div>
+                    </button>';
+                }
             }
         ?>
     </nav>

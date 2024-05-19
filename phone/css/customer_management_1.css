@@ -95,7 +95,7 @@
   background: #FFFFFF;
   display: flex;
   flex-direction: column;
-  padding-bottom: 265px;
+  padding-bottom: 5rem;
   width: 100%;
   box-sizing: border-box;
 }

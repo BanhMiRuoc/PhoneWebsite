@@ -38,7 +38,7 @@ if (isset($_POST['btn_Create'])) {
             <a href='$activation_link'>Kích hoạt tài khoản</a>";
             $subject = "Tạo tài khoản nhân viên $name";
             $mail = new Mailer();
-            $mail->createAcc($email, $name, $body, $subject);
+            $mail->createAcc($email, $body, $subject);
 
             header('Location:../../index.php?quanly=home&login=true');
             exit(); // Dừng việc thực thi mã PHP ngay sau khi chuyển hướng

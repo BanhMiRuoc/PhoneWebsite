@@ -1,4 +1,4 @@
-<div class="customer-management-1">
+<div class="customer-management-1" href="index.php?user=login&action=admin">
     <div class="menu">
       <div class="container">
         <span class="customer-management">

@@ -1,10 +1,12 @@
 .address {
     color: #5754A3;
 }
+
 .address img {
     height: 1rem;
     width: auto;
 }
+
 .add-product .add {
     background: #F7BDCB;
 }

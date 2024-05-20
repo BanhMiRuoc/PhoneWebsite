@@ -64,14 +64,14 @@
       <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="card-wrapper container-sm d-flex  justify-content-around">
-              <div class="card" style="width: 18rem; margin: 1rem"> 
+            <div class="card-wrapper container-sm d-flex justify-content-around">
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
                   <img class="card-img-top"  src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">15.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -86,13 +86,13 @@
                     </div> 
                   </div> 
               </div>
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/rectangle_70.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Iphone 14 Pro</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">12.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -107,13 +107,13 @@
                     </div> 
                   </div> 
               </div>
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/rectangle_71.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Iphone 14 Pro Max</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">13.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -132,13 +132,13 @@
           </div>
           <div class="carousel-item">
             <div class="card-wrapper container-sm d-flex   justify-content-around">
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/Samsung/Samsung_Galaxy_A15.png" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Galaxy A15</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">13.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -153,13 +153,13 @@
                     </div> 
                   </div> 
               </div>
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/Samsung/Samsung_Galaxy_Note_10_5G.png" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Galaxy Note 10</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">20.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -174,13 +174,13 @@
                     </div> 
                   </div> 
               </div>
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/Samsung/SAMSUNG_Galaxy_S20_FE.png" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Galaxy S20</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">15.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -199,13 +199,13 @@
           </div>
           <div class="carousel-item">
             <div class="card-wrapper container-sm d-flex  justify-content-around">
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/Vivo/Vivo_S18e.png" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Vivo S18</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">11.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -220,13 +220,13 @@
                     </div> 
                   </div> 
               </div>
-              <<div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/Vivo/Vivo_V30_Pro.png" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Vivo V30</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">12.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 
@@ -241,13 +241,13 @@
                     </div> 
                   </div> 
               </div>
-              <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
+              <div class="card d-flex align-items-center p-3" style="width: 18rem; margin: 1rem"> 
+                  <img class="card-img-top" src="assets/images/Vivo/Vivo_X100_Pro.png" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
-                    <h5 class="card-title">Iphone 15 Pro Max</h5> 
+                    <h5 class="card-title mt-2">Vivo X100</h5> 
                     <div class="test"> 
                       <div class="price-rating"> 
-                        <p class="card-price" style="color:red; font-size:1.25rem;">102.291.281đ</p> 
+                        <p class="card-price" style="color:red; font-size:1.25rem;">17.000.000đ</p> 
                         <div class="rating"> 
                           <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label> 
                           <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label> 

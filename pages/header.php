@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-light bg-light jusify-content-none">
+    <nav class="navbar navbar-light bg-light justify-content-none">
         <a href="Home" class="navbar-brand">
             <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
             MeoPhones

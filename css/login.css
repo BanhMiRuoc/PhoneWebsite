@@ -1,109 +1,133 @@
 body {
-color: #5754A3 !important;
-font-family: "JetBrains Mono", monospace;
+    color: #5754A3 !important;
+    font-family: "JetBrains Mono", monospace;
 }
+
 .navbar {
-flex-wrap: nowrap;
-width: 100%;
-height: 4.5rem;
-background-color: #F7BDCB !important;
-justify-content: start;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 4.5rem;
+    background-color: #F7BDCB !important;
+    justify-content: start;
 }
+
 a.navbar-brand {
-margin-left: 10%;
-margin-top: 0.5rem;
-text-align: center;
-font-family: "Jockey One", sans-serif !important;
-font-size: 2.5rem;
-color: #5754A3 !important;
+    margin-left: 10%;
+    margin-top: 0.5rem;
+    text-align: center;
+    font-family: "Jockey One", sans-serif !important;
+    font-size: 2.5rem;
+    color: #5754A3 !important;
 }
+
 .form-control {
-margin-left: 5%;
-margin-top: 0.5rem;
-border-radius: 2rem 0 0 2rem !important;
+    margin-left: 5%;
+    margin-top: 0.5rem;
+    border-radius: 2rem 0 0 2rem !important;
 }
 
 .form-control1 {
-margin-top: 0.5rem;
-width: 100%;
+    margin-top: 0.5rem;
+    width: 100%;
 }
+
 .search-btn {
-margin-top: 0.5rem;
-border-radius: 0 2rem 2rem 0!important;
+    margin-top: 0.5rem;
+    border-radius: 0 2rem 2rem 0 !important;
 }
+
 .nav-btn {
-margin-left: 2%;
-margin-top: 1.5rem;
+    margin-left: 2%;
+    margin-top: 1.5rem;
 }
+
 p {
-font-size: 0.8rem;
+    font-size: 0.8rem;
 }
+
 .form-inline {
-width: 40%;
+    width: 40%;
 }
+
 .icon-img {
-margin-left: 10px;
+    margin-left: 10px;
 }
+
 .menu {
     justify-content: space-around;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;            margin-bottom: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    margin-bottom: 2%;
 }
-.menu, .slider, .slider-left, .slider-right {
+
+.menu,
+.slider,
+.slider-left,
+.slider-right {
     display: flex;
     justify-content: center;
 }
-.slider-left, .slider-right {
+
+.slider-left,
+.slider-right {
     display: flex;
     flex-direction: column;
 }
+
 .slider {
     display: flex;
     justify-content: space-between;
-    
+
 }
-.section-item {
+
+.section-item.login {
     justify-content: center;
     border: solid 2px #F7BDCB;
     margin: 5rem auto;
     align-items: center;
     width: 40rem;
-    height: 25rem; 
+    height: 25rem;
 }
 
-
-.login-form {
+.login .login-form {
     width: 50%;
     height: 50%;
     margin: auto;
     flex-direction: column;
     display: flex;
 }
-.logo h1 {
+
+.login .logo h1 {
     font-family: "Jockey One", sans-serif !important;
     color: #5754A3;
 }
-.logo {
+
+.login .logo {
     margin-top: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.form-group {
+
+.login .form-group {
     margin: 3px;
 }
-.form-check { 
+
+.login .form-check {
     padding-left: 0 !important;
 }
-.form-check a {
+
+.login .form-check a {
     font-size: small;
     color: #5754A3;
     text-decoration: none;
 }
-.sm {
+
+.login .sm {
     background-color: #E37596;
     border: #E37596;
 }
-.sm:hover {
+
+.login .sm:hover {
     background-color: #F7BDCB;
     color: #5754A3;
 }

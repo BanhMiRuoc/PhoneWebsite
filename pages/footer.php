@@ -1,4 +1,4 @@
-<footer class="footer">
+<footer class="footer container-fluid">
   <div class="row footer-social shadow-lg">
     <div class="container-fluid d-flex justify-content-center my-3">
       <!-- facebook -->

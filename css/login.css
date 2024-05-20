@@ -78,7 +78,7 @@ p {
     height: 60%;
 }
 .section-item .login-content {
-    height: 100%;
+    height: 10%;
     width: inherit;
 }
 .login .login-form {
@@ -88,10 +88,11 @@ p {
     flex-direction: column;
     display: flex;
 }
-
 .login .logo h1 {
     font-family: "Jockey One", sans-serif !important;
     color: #5754A3;
+    margin-top: 0; /* Ensure no additional margin on the title */
+    margin-bottom: 0;
 }
 
 .login .logo {
@@ -99,8 +100,8 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 0.5rem;
 }
-
 .login .form-group {
     margin: 3px;
 }

@@ -15,17 +15,16 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <!-- <link href="dist/css/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
     <link href="bootstrap-rating.css" rel="stylesheet">
     <script type="text/javascript" src="bootstrap-rating.js"></script> -->
-
+    
     <link rel="stylesheet" href="css/home.css">
     <link rel="stylesheet" href="css/customer_management_1.css">
-    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="stylesheet" href="css/navbar.css">
@@ -34,7 +33,8 @@
     <link rel="stylesheet" href="css/add_product.css">
     <link rel="stylesheet" href="css/report.css">
     <link rel="stylesheet" href="css/create_order.css">
-
+    <link rel="stylesheet" href="css/login.css">
+    
 </head>
 <body>
     <div>

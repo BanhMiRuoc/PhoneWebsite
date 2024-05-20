@@ -1,7 +1,7 @@
 <div class="section-item login">
   <div class="login-content container">
     <div class="logo">
-      <img src="assets/images/mobile_11.png" width="20%" height="20%" alt="">
+      <img src="assets/images/mobile_11.png" width="30%" height="30%" class="logo-img">
       <h1>LOGIN</h1>
     </div>
     <form class="login-form mb-3" method="POST" action="modules/sanpham/checkLogin.php" id="login-form">

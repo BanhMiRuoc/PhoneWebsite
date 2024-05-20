@@ -1,165 +1,115 @@
-
-<div class="report container">
-    <div class="row container-address">
-      <div class="address container">
-        <p class="login-address-content text-uppercase fw-bold">
-          HOME
-          <img src="assets/images/next.png" alt="icon next" class="icon-next mb-1">
-          Report
-        </p>
-      </div>
+<section class="report">
+    <div class="container">
+        <h1>Sales Report</h1>
+        <div>
+            <form id="dateForm">
+                <label for="dateRange">Select Date Range:</label>
+                <select id="dateRange">
+                    <option value="today">Today</option>
+                    <option value="yesterday">Yesterday</option>
+                    <option value="this-week">This Week</option>
+                    <option value="custom">Custom</option>
+                </select>
+                <input type="date" id="startDate" style="display: none;">
+                <input type="date" id="endDate" style="display: none;">
+                <button type="submit">Generate Report</button>
+            </form>
+        </div>
+        <table id="salesTable">
+            <tr>
+                <th>Total Money</th>
+                <th>Quantity Orders</th>
+                <th>Quantity Products</th>
+                <th>Detail</th>
+            </tr>
+            <tr>
+                <td>$1000</td>
+                <td>10</td>
+                <td>50</td>
+                <td><button class="detail-btn" onclick="showOrderList('2024-05-20')">View Detail</button></td>
+            </tr>
+            <!-- More rows here -->
+        </table>
+        <table id="orderTable" style="display: none;">
+            <thead>
+                <tr>
+                    <th>Order ID</th>
+                    <th>Date</th>
+                    <th>Total</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
     </div>
-    <?php
-    $query = "SELECT 
-        Hoadon.ngaylapdon,
-        SUM(Hoadon.tongtien) AS tongtien_nhan_duoc,
-        COUNT(Hoadon.mahd) AS so_luong_don_hang,
-        SUM(Hoadon.soluongsp) AS so_luong_ban_ra
-    FROM 
-        Hoadon
-    GROUP BY 
-        Hoadon.ngaylapdon
-    ORDER BY 
-        Hoadon.ngaylapdon";
+</section>
+<script>
+    const dateForm = document.getElementById('dateForm');
+    const dateRangeSelect = document.getElementById('dateRange');
+    const startDateInput = document.getElementById('startDate');
+    const endDateInput = document.getElementById('endDate');
+    const orderTable = document.getElementById('orderTable');
 
-    $result = $mysqli->query($query);
-
-    // Kiểm tra kết quả và hiển thị dữ liệu
-    // if ($result->num_rows > 0) {
-    // // Duyệt qua từng hàng kết quả
-    // while ($row = $result->fetch_assoc()) {
-    // // Hiển thị thông tin từng hàng
-    // echo "<div class='row container'>";
-    // echo "<div class='col d-flex justify-content-center'><div class='row p-3'>" . $row["ngaylapdon"] . "</div></div>";
-    // echo "<div class='col d-flex justify-content-center'><div class='row p-3'>" . $row["tongtien_nhan_duoc"] . "$</div></div>";
-    // echo "<div class='col d-flex justify-content-center'><div class='row p-3'>" . $row["so_luong_don_hang"] . "</div></div>";
-    // echo "<div class='col d-flex justify-content-center'><div class='row p-3'>" . $row["so_luong_ban_ra"] . "</div></div>";
-    // echo "</div>";
-    // }
-    // } else {
-    // echo "Không có kết quả.";
-    // }
-    ?>
-
-    <!-- filter -->
-    <div class="btn btn-filter">
-        <select class="filter-dropdown" id="filterReport" onchange="filterReport()">
-            <option value="Ngay">Chọn ngày</option>
-            <?php
-            $query = "SELECT DISTINCT ngaylapdon FROM HOADON";
-            $result = $mysqli->query($query);
-
-            if ($result->num_rows > 0) :
-                while ($row = $result->fetch_assoc()) : ?>
-                    <option value="<?php echo $row["ngaylapdon"]; ?>"><?php echo $row["ngaylapdon"]; ?></option>
-            <?php endwhile; ?>
-            <?php else : ?>
-                <p>Không có dữ liệu.</p>
-            <?php endif; ?>
-        </select>
-    </div>
-
-    <div class="view">
-      <div class="row container">
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Ngày</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Tổng tiền đã nhận</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Số lượng đơn hàng</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-          <div class="row p-3">Số lượng bán ra</div>
-        </div>
-      </div> 
-    <?php
-    if (isset($_GET['ngaylapdon'])) {
-        $nld = $_GET['ngaylapdon'];
-        $query = "SELECT 
-            Hoadon.ngaylapdon,
-            SUM(Hoadon.tongtien) AS tongtien_nhan_duoc,
-            COUNT(Hoadon.mahd) AS so_luong_don_hang,
-            SUM(Hoadon.soluongsp) AS so_luong_ban_ra
-        FROM 
-            Hoadon
-        WHERE ngaylapdon = '$nld'
-        GROUP BY 
-            Hoadon.ngaylapdon
-        ORDER BY 
-            Hoadon.ngaylapdon";
-
-        $result = $mysqli->query($query);
-
-        // Kiểm tra kết quả và hiển thị dữ liệu
-        if ($result->num_rows > 0) {
-        // Duyệt qua từng hàng kết quả
-        while ($row = $result->fetch_assoc()) {
-        // Hiển thị thông tin từng hàng
-        echo '<div class="row container">
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['ngaylapdon'].'</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['tongtien_nhan_duoc'].'$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['so_luong_don_hang'].'</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['so_luong_ban_ra'].'</div>
-        </div>
-    </div>';
-        }
+    dateRangeSelect.addEventListener('change', function() {
+        if (this.value === 'custom') {
+            startDateInput.style.display = 'inline-block';
+            endDateInput.style.display = 'inline-block';
         } else {
-        echo "Không có kết quả.";
+            startDateInput.style.display = 'none';
+            endDateInput.style.display = 'none';
         }
-    }
-    else {
-        $query = "SELECT 
-            Hoadon.ngaylapdon,
-            SUM(Hoadon.tongtien) AS tongtien_nhan_duoc,
-            COUNT(Hoadon.mahd) AS so_luong_don_hang,
-            SUM(Hoadon.soluongsp) AS so_luong_ban_ra
-        FROM 
-            Hoadon
-        GROUP BY 
-            Hoadon.ngaylapdon
-        ORDER BY 
-            Hoadon.ngaylapdon";
+    });
 
-        $result = $mysqli->query($query);
+    dateForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        const selectedDate = dateRangeSelect.value === 'custom' ? startDateInput.value : getCurrentDate();
+        showOrderList(selectedDate);
+    });
 
-        // Kiểm tra kết quả và hiển thị dữ liệu
-        if ($result->num_rows > 0) {
-        // Duyệt qua từng hàng kết quả
-        while ($row = $result->fetch_assoc()) {
-        // Hiển thị thông tin từng hàng
-        echo '<div class="row container">
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['ngaylapdon'].'</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['tongtien_nhan_duoc'].'$</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['so_luong_don_hang'].'</div>
-        </div>
-        <div class="col d-flex justify-content-center">
-        <div class="row p-3">'.$row['so_luong_ban_ra'].'</div>
-        </div>
-    </div>';
+    function showOrderList(date) {
+        const orders = getOrdersForDate(date);
+        const orderTableBody = orderTable.querySelector('tbody');
+        orderTableBody.innerHTML = '';
+
+        if (orders.length > 0) {
+            orders.forEach(order => {
+                const row = orderTableBody.insertRow();
+                row.innerHTML = `
+                    <td>${order.id}</td>
+                    <td>${order.date}</td>
+                    <td>${order.total}</td>
+                    <td><button>View detail</button></td>
+                `;
+            });
+            orderTable.style.display = 'block';
+        } else {
+            orderTable.style.display = 'none';
         }
     }
-    }
-?>
-      </div> 
-    </div>
-    <script>
-        function filterReport() {
-            const nld = document.getElementById('filterReport').value;
-            window.location.href = `?quanly=report&ngaylapdon=${nld}`;
+
+    function getCurrentDate() {
+        const today = new Date();
+        const year = today.getFullYear();
+        let month = today.getMonth() + 1;
+        let day = today.getDate();
+
+        if (month < 10) {
+            month = '0' + month;
         }
-    </script>
-  </div>
+        if (day < 10) {
+            day = '0' + day;
+        }
+
+        return `${year}-${month}-${day}`;
+    }
+
+    function getOrdersForDate(date) {
+        // Mock function to return orders for the selected date
+        return [
+            { id: 1, date: '2024-05-20', total: '$100' },
+            { id: 2, date: '2024-05-20', total: '$150' },
+        ];
+    }
+</script>
+

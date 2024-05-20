@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-light bg-light justify-content-none">
-        <a href="Home" class="navbar-brand">
+        <a href="index.php" class="navbar-brand">
             <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
             MeoPhones
         </a>

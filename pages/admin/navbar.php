@@ -8,65 +8,65 @@
         </div>
         <ul class="sidebar-nav">
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php?quanly=createorder" class="sidebar-link">
                     <img src="assets/images/orders.png" width="20" alt="">
                     <span>Create order</span>
                 </a>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php?quanly=homeadmin" class="sidebar-link">
                     <img src="assets/images/product.png" width="17" alt="">
-                    <span>Product manager</span>
+                    <span>Product management</span>
                 </a>
             </li>
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                    data-bs-target="#staff-manager" aria-expanded="false" aria-controls="staff-manager">
+                    data-bs-target="#staff-management" aria-expanded="false" aria-controls="staff-management">
                     <img src="assets/images/staff.png" width="20" alt="">
-                    <span>Staff manager</span>
+                    <span>Staff management</span>
                 </a>
-                <ul id="staff-manager" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <ul id="staff-management" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Create account</a>
+                        <a href="index.php?quanly=signup" class="sidebar-link">Create account</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">List staff</a>
+                        <a href="index.php?quanly=liststaff" class="sidebar-link">List staff</a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                    data-bs-target="#customer-manager" aria-expanded="false" aria-controls="customer-manager">
+                    data-bs-target="#customer-management" aria-expanded="false" aria-controls="customer-management">
                     <img src="assets/images/customer.png" width="20" alt="">
-                    <span>Customer manager</span>
+                    <span>Customer management</span>
                 </a>
-                <ul id="customer-manager" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <ul id="customer-management" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Create account</a>
-                    </li>
-                    <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">List staff</a>
+                        <a href="index.php?quanly=listcustomer" class="sidebar-link">List customer</a>
                     </li>
                 </ul>
             </li>
             <li class="sidebar-item">
-                <a href="#" class="sidebar-link">
+                <a href="index.php?quanly=report" class="sidebar-link">
                     <img src="assets/images/report.png" width="20" alt="">
                     <span>Report</span>
                 </a>
             </li>
             <li class="sidebar-item">
                 <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                    data-bs-target="#account-manager" aria-expanded="false" aria-controls="account-manager">
+                    data-bs-target="#account-management" aria-expanded="false" aria-controls="account-management">
                     <img src="assets/images/user.png" width="20" alt="">
-                    <span>Account manager</span>
+                    <span>Account management</span>
                 </a>
-                <ul id="account-manager" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                <ul id="account-management" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+                    <li class="sidebar-item">
+                        <a href="#" class="sidebar-link">List account</a>
+                    </li>
                     <li class="sidebar-item">
                         <a href="#" class="sidebar-link">View infomation</a>
                     </li>
                     <li class="sidebar-item">
-                        <a href="#" class="sidebar-link">Change password</a>
+                        <a href="index.php?quanly=changepassword" class="sidebar-link">Change password</a>
                     </li>
                 </ul>
             </li>

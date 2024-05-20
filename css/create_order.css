@@ -37,7 +37,7 @@ th, td {
 }
 
 .them-san-pham {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 #ma-san-pham {
@@ -53,9 +53,14 @@ th, td {
     border: none;
     cursor: pointer;
 }
-
+.btn-submit {
+    color: #ffff;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #E37596 !important;
+}
 #btn-them-san-pham:hover {
-    background-color: #45a049;
+    background-color: #b20059;
 }
 
 .tong-tien {

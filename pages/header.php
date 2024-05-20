@@ -1,6 +1,6 @@
 <header>
     <nav class="navbar navbar-light bg-light jusify-content-none">
-        <a href="index.php" class="navbar-brand">
+        <a href="Home" class="navbar-brand">
             <img src="assets/images/mobile_11.png" width="55" height="55" class="d-inline-block align-top">
             MeoPhones
         </a>
@@ -49,18 +49,7 @@
                         <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
                         <p>Tài khoản</p>
                     </div>
-                    </button>
-                    <div class="dropdown">
-                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        <img src="assets/images/user_interface.png" width="40" height="40" alt="Image" class="icon-img">
-                        QLTK
-                    </button>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.php?quanly=signup">Tạo tài khoản nhân viên</a></li>
-                        <li><a class="dropdown-item" href="index.php?quanly=cm1">Tìm khách hàng</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </div>';
+                    </button>';
                 }
                 else {
                     echo '<button class="btn nav-btn">

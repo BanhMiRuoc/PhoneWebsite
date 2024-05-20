@@ -23,7 +23,7 @@
     <div class="forgot-password-content">
         <div class="logo">
             <img src="assets/images/mobile_11.png" width="10%" height="20%" alt="">
-            <h1>Forgot password</h1>
+            <h1>Change password</h1>
         </div>
         <small class="forgot-password-attention d-flex justify-content-center" style="margin-top: 4rem">Vui lòng đặt lại mật khẩu cho lần đăng nhập tiếp theo</small>
         <form class="forgot-password-form mt-4" id="changeForm" method="POST" action="modules/sanpham/updatePass.php">

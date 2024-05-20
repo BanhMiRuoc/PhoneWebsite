@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Jockey+One&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/mobile_11.png ">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>MeoPhones</title>
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One:wght@400&display=swap" rel="stylesheet">
@@ -17,15 +15,13 @@
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    
+
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <!-- <link href="dist/css/bootstrap.css" rel="stylesheet">
     <script type="text/javascript" src="dist/js/jquery-1.10.2.js"></script>
     <link href="bootstrap-rating.css" rel="stylesheet">
-    <script type="text/javascript" src="bootstrap-rating.js"></script>
+    <script type="text/javascript" src="bootstrap-rating.js"></script> -->
 
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/customer_management_1.css" />
@@ -34,6 +30,11 @@
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/home_admin.css">
+    <link rel="stylesheet" href="css/detail_product.css">
+    <link rel="stylesheet" href="css/add_product.css">
+    <link rel="stylesheet" href="css/report.css">
+    <link rel="stylesheet" href="css/create_order.css">
+
 </head>
 <body>
     <div>
@@ -97,6 +98,14 @@
     elseif($tam == 'forgotpassword'){
         include("pages/forgot-password/forgot_password.php");
     }
+    elseif($tam == 'report'){
+        include("pages/admin/navbar.php");
+        include("pages/report.php");
+    }
+    elseif($tam == 'addproduct'){
+        include("pages/admin/navbar.php");
+        include("pages/add_product.php");
+    }
     elseif($tam == 'changepassword'){
         include("pages/forgot-password/change_password.php");
     }
@@ -107,10 +116,31 @@
         include("pages/admin/navbar.php");
         include("pages/home_admin.php");
     }
+    elseif($tam == 'listcustomer'){
+        include("pages/admin/navbar.php");
+        include("pages/list_customer.php");
+    }
+    elseif($tam == 'report'){
+        include("pages/admin/navbar.php");
+        include("pages/report.php");
+    }
+    elseif($tam == 'createorder'){
+        include("pages/admin/navbar.php");
+        include("pages/create_order.php");
+    }
+    elseif($tam == 'liststaff'){
+        include("pages/admin/navbar.php");
+        include("pages/list_staff.php");
+    }
+    elseif($tam == 'listcustomer'){
+        include("pages/admin/navbar.php");
+        include("pages/list_customer.php");
+    }
     // elseif($tam == 'lsbh'){
     //     include("pages/lichsubanhang.php");
     // }
     elseif($tam == 'detailproduct'){
+        include("pages/admin/navbar.php");
         include("pages/detail_product.php");
     }
     elseif($tam == 'home&login=true'){
@@ -158,5 +188,6 @@
     <script src="js/check_ChangePass.js"></script>
     <script src="js/home_admin.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/getListProduct.js"></script>
 </body>
 </html>

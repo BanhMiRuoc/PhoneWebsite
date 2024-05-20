@@ -8,7 +8,9 @@
 .address {
     color: #5754A3;
 }
-
+.container-address {
+    margin-top: 20px; 
+}
 .report .address img {
     height: 1rem;
     width: auto;

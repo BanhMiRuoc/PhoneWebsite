@@ -22,13 +22,14 @@
                 <p>Không có dữ liệu.</p>
             <?php endif; ?>
       </div>
-        <div id="banner" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-indicators">
-              <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
+
+      <div id="banner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner"> 
             <div class="carousel-item active">
             <img class="d-block w-100" src="assets/images/banner1.jpg"  alt="">
             </div>
@@ -47,14 +48,13 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
-        </div>
+      </div>
     </header>
 
     <section class="list-phone m-4">
         <h2>ĐIỆN THOẠI NỔI BẬT</h2>
         <div class="container">
             <div id="product-container" class="row">
-
             </div>
         </div>
     </section>
@@ -66,7 +66,7 @@
           <div class="carousel-item active">
             <div class="card-wrapper container-sm d-flex  justify-content-around">
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top"  src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -87,7 +87,7 @@
                   </div> 
               </div>
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -108,7 +108,7 @@
                   </div> 
               </div>
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -133,7 +133,7 @@
           <div class="carousel-item">
             <div class="card-wrapper container-sm d-flex   justify-content-around">
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -154,7 +154,7 @@
                   </div> 
               </div>
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -175,7 +175,7 @@
                   </div> 
               </div>
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -200,7 +200,7 @@
           <div class="carousel-item">
             <div class="card-wrapper container-sm d-flex  justify-content-around">
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -221,7 +221,7 @@
                   </div> 
               </div>
               <<div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 
@@ -242,7 +242,7 @@
                   </div> 
               </div>
               <div class="card" style="width: 18rem; margin: 1rem"> 
-                  <img class="card-img-top" src="assets/images/iphone-15-pro-max-blue-thumbnew-600x600.jpg" alt="Card image cap"> 
+                  <img class="card-img-top" src="assets/images/iphone_15_pro_max_blue_thumbnew_600_x_6001.jpeg" width="50" alt="Card image cap"> 
                   <div class="card-body"> 
                     <h5 class="card-title">Iphone 15 Pro Max</h5> 
                     <div class="test"> 

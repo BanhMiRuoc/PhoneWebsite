@@ -23,9 +23,9 @@
     <link href="bootstrap-rating.css" rel="stylesheet">
     <script type="text/javascript" src="bootstrap-rating.js"></script> -->
 
-    <link rel="stylesheet" href="css/home.css" />
-    <link rel="stylesheet" href="css/customer_management_1.css" />
-    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/customer_management_1.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/forgot_password.css">
     <link rel="stylesheet" href="css/navbar.css">

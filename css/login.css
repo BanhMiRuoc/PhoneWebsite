@@ -52,45 +52,38 @@ p {
 .icon-img {
     margin-left: 10px;
 }
-
 .menu {
     justify-content: space-around;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
-    margin-bottom: 2%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;            margin-bottom: 2%;
 }
-
-.menu,
-.slider,
-.slider-left,
-.slider-right {
+.menu, .slider, .slider-left, .slider-right {
     display: flex;
     justify-content: center;
 }
-
-.slider-left,
-.slider-right {
+.slider-left, .slider-right {
     display: flex;
     flex-direction: column;
 }
-
 .slider {
     display: flex;
     justify-content: space-between;
-
+    
 }
-
-.section-item.login {
+.section-item {
     justify-content: center;
     border: solid 2px #F7BDCB;
     margin: 5rem auto;
     align-items: center;
-    width: 40rem;
-    height: 25rem;
-}
-
-.login .login-form {
     width: 50%;
-    height: 50%;
+    height: 60%;
+}
+.section-item .login-content {
+    height: 100%;
+    width: inherit;
+}
+.login .login-form {
+    width: 90%;
+    height: 90%;
     margin: auto;
     flex-direction: column;
     display: flex;
